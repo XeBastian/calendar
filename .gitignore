@@ -6,3 +6,4 @@ site.tar.gz
 .wrangler/
 node_modules/
 .vercel/
+/docs
