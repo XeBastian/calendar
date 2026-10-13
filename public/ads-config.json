@@ -1,0 +1,16 @@
+{
+  "enabled": false,
+  "adsense": {
+    "publisherId": "ca-pub-3654708143461818",
+    "slots": {
+      "event-inline": "",
+      "event-actions": "",
+      "list-break": ""
+    }
+  },
+  "adManager": {
+    "rewardedAdUnitPath": ""
+  },
+  "siteUrl": "https://calendar.korvexa.dev",
+  "privacyPolicyUrl": "https://calendar.korvexa.dev/privacy"
+}

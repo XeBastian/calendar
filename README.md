@@ -74,3 +74,7 @@ Search accepts organizer names, regions (including SADC and West Africa), Flutte
 To import downloaded individual GDG/CNCF JSON records again, run `node scripts/import-organizer-records.mjs <directory>`, then build. The regular scraper also reads the public GDG, CNCF and ICTAM listings. Listing refreshes retain previously verified admission and venue details; details still need periodic verification against organizer pages. Vercel deployments refresh their bundled data through a scraper run and redeployment.
 
 The logo and wordmark are the official assets from [Korvexa Dev](https://korvexa.dev/), bundled locally so the app does not depend on third-party image requests.
+
+### Advertising placements
+
+To review the planned inventory, open an event with `?ads=preview`, or use `/?view=list&ads=preview`. Three labelled ad previews sit within the scrolling content and stay hidden during normal use. See [the advertising setup guide](docs/ADS.md) for the AdSense and Ad Manager account/configuration details needed next. No live ads, tracking or download gate is active.

@@ -39,7 +39,7 @@ function request(path, query = {}, method = 'GET') {
 test('build produces Vercel static output without a Sites manifest', async () => {
   await assert.rejects(stat(join(fixture, '.openai')), {code: 'ENOENT'});
   await assert.rejects(stat(join(fixture, 'dist/.openai')), {code: 'ENOENT'});
-  for (const name of ['index.html', 'style.css', 'app.js', 'calendar.mjs', 'favicon.svg', 'korvexa-logo.jpg', 'korvexa-mark.png']) {
+  for (const name of ['index.html', 'style.css', 'app.js', 'calendar.mjs', 'ads.mjs', 'ads-config.json', 'ads.txt', 'privacy.html', 'privacy.js', 'favicon.svg', 'korvexa-logo.jpg', 'korvexa-mark.png']) {
     assert.ok((await readFile(join(fixture, config.outputDirectory, name))).length);
   }
   const html = await readFile(join(fixture, config.outputDirectory, 'index.html'), 'utf8');
@@ -103,3 +103,36 @@ test('detail page rewrites resolve to the app shell while API and feed use a fun
 });
 
 test('official brand assets are served without binary corruption by the portable Worker',async()=>{for(const [name,type] of [['korvexa-logo.jpg','image/jpeg'],['korvexa-mark.png','image/png']]){const response=await request('/'+name);assert.equal(response.status,200);assert.equal(response.headers.get('content-type'),type);assert.deepEqual(Buffer.from(await response.arrayBuffer()),await readFile(join(fixture,'public',name)));}});
+
+
+test('publisher setup serves consistent verification identifiers without activating ads',async()=>{
+ const config=await (await request('/ads-config.json')).json();
+ assert.equal(config.adsense.publisherId,'ca-pub-3654708143461818');
+ assert.equal(config.enabled,false);
+ assert.equal(config.siteUrl,'https://calendar.korvexa.dev');
+ const ads=await request('/ads.txt');
+ assert.equal(ads.status,200);
+ assert.match(ads.headers.get('content-type'),/^text\/plain/);
+ assert.equal(await ads.text(),'google.com, pub-3654708143461818, DIRECT, f08c47fec0942fa0\n');
+ const html=await readFile(join(fixture,'public/index.html'),'utf8');
+ assert.match(html,/<meta name="google-adsense-account" content="ca-pub-3654708143461818">/);
+ assert.doesNotMatch(html,/<script[^>]+src=["'][^"']*(?:googlesyndication|doubleclick)/i);
+});
+
+test('privacy routes work in the portable Worker and Vercel output, including HEAD',async()=>{
+ for(const path of ['/privacy','/privacy/','/privacy.html']){
+  const response=await request(path);
+  assert.equal(response.status,200);
+  assert.match(response.headers.get('content-type'),/^text\/html/);
+  const html=await response.text();
+  assert.match(html,/Privacy, clearly/);
+  assert.match(html,/Advertising is currently disabled/);
+  assert.match(html,/mailto:hello@korvexa.com/);
+ }
+ const head=await request('/privacy',{},'HEAD');
+ assert.equal(head.status,200);assert.equal(await head.text(),'');
+ for(const path of ['/privacy','/privacy/']){
+  const rewrite=config.rewrites.find(r=>r.source===path);assert.ok(rewrite);
+  assert.ok((await readFile(join(fixture,config.outputDirectory,rewrite.destination))).length);
+ }
+});

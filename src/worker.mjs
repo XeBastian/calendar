@@ -33,8 +33,9 @@ export default {
     if(url.searchParams.has('ids')){const ids=new Set(url.searchParams.get('ids').split(','));events=events.filter(e=>ids.has(e.id));}
     return reply(toICS(events,url.origin),200,{'Content-Type':'text/calendar; charset=utf-8','Content-Disposition':'attachment; filename="korvexa-tech-calendar.ics"','Cache-Control':'public, max-age=300'});
    }
+   if(path==='/privacy'||path==='/privacy/')return reply(request.method==='HEAD'?null:ASSETS['/privacy.html'],200,{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-cache'});
    if(BINARY_ASSETS[path])return reply(request.method==='HEAD'?null:Uint8Array.from(atob(BINARY_ASSETS[path]),c=>c.charCodeAt(0)),200,{'Content-Type':path.endsWith('.png')?'image/png':'image/jpeg','Cache-Control':'public, max-age=86400'});
-   const types={'html':'text/html','css':'text/css','js':'text/javascript','mjs':'text/javascript','svg':'image/svg+xml'};
+   const types={'html':'text/html','css':'text/css','js':'text/javascript','mjs':'text/javascript','svg':'image/svg+xml','json':'application/json','txt':'text/plain'};
    if(ASSETS[path])return reply(request.method==='HEAD'?null:ASSETS[path],200,{'Content-Type':types[path.split('.').at(-1)]+'; charset=utf-8','Cache-Control':'public, max-age=300'});
    if(path==='/'||/^\/(events|opportunities)\/[^/]+$/.test(path))return reply(request.method==='HEAD'?null:ASSETS['/index.html'],200,{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-cache'});
    return reply('Not found',404);

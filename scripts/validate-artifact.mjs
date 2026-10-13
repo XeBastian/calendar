@@ -6,7 +6,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 const projectRoot = resolve(fileURLToPath(new URL("..", import.meta.url)));
 const workerPath = resolve(projectRoot, "dist/server/index.js");
 const source = await readFile(workerPath, "utf8");
-for (const name of ["index.html", "style.css", "app.js", "calendar.mjs", "favicon.svg"]) {
+for (const name of ["index.html", "style.css", "app.js", "calendar.mjs", "ads.mjs", "ads-config.json", "ads.txt", "privacy.html", "privacy.js", "favicon.svg"]) {
   assert.ok((await readFile(resolve(projectRoot, "dist/client", name))).length, `${name} is missing or empty`);
 }
 
