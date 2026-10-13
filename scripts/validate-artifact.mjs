@@ -5,13 +5,10 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 
 const projectRoot = resolve(fileURLToPath(new URL("..", import.meta.url)));
 const workerPath = resolve(projectRoot, "dist/server/index.js");
-const manifestPath = resolve(projectRoot, "dist/.openai/hosting.json");
-
-const [source, manifest] = await Promise.all([
-  readFile(workerPath, "utf8"),
-  readFile(manifestPath, "utf8"),
-]);
-JSON.parse(manifest);
+const source = await readFile(workerPath, "utf8");
+for (const name of ["index.html", "style.css", "app.js", "calendar.mjs", "favicon.svg"]) {
+  assert.ok((await readFile(resolve(projectRoot, "dist/client", name))).length, `${name} is missing or empty`);
+}
 
 // A data URL forces ESM parsing even though the generated output has no package.json.
 const moduleUrl = `data:text/javascript;base64,${Buffer.from(source).toString("base64")}`;
@@ -22,4 +19,10 @@ assert.equal(
   `${pathToFileURL(workerPath)} must export default.fetch`,
 );
 
-console.log("Artifact is valid ESM and exports default.fetch");
+const {default: vercelHandler} = await import(pathToFileURL(resolve(projectRoot, "api/index.js")));
+assert.equal(typeof vercelHandler.fetch, "function");
+const health = await vercelHandler.fetch(new Request("https://calendar.example/api/index?__calendar_path=/api/health"));
+assert.equal(health.status, 200);
+assert.deepEqual(await health.json(), {ok: true, calendar: "tech"});
+
+console.log("Static assets, Worker ESM and Vercel function are valid");
