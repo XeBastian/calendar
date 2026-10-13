@@ -1,0 +1,1638 @@
+{
+  "updatedAt": "2026-10-13T16:26:56.507Z",
+  "events": [
+    {
+      "id": "kubecon-na-2026",
+      "calendar": "tech",
+      "name": "KubeCon + CloudNativeCon North America",
+      "start": "2026-11-10",
+      "end": "2026-11-12",
+      "city": "Salt Lake City",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Cloud & DevOps",
+        "Development"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/",
+      "description": "Meet cloud native maintainers and engineers working on Kubernetes and the tools around it. Co-located events take place November 9.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": {
+        "level": "Travel grant",
+        "status": "Closed",
+        "url": "https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/attend/scholarships-travel-funding/",
+        "coverage": "Registration scholarships and a separate travel fund. Awards depend on need and available funds.",
+        "eligibility": "Community contributors and people facing financial barriers.",
+        "deadline": "2026-10-04"
+      }
+    },
+    {
+      "id": "web-summit-2026",
+      "calendar": "tech",
+      "name": "Web Summit",
+      "start": "2026-11-09",
+      "end": "2026-11-12",
+      "city": "Lisbon",
+      "country": "Portugal",
+      "continent": "Europe",
+      "topics": [
+        "Startups",
+        "AI"
+      ],
+      "type": "Summit",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://websummit.com/",
+      "description": "A cross-industry technology gathering for founders, developers, investors and people building digital products.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": null
+    },
+    {
+      "id": "ietf-127",
+      "calendar": "tech",
+      "name": "IETF 127",
+      "start": "2026-11-14",
+      "end": "2026-11-20",
+      "city": "San Francisco",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Connectivity",
+        "Security"
+      ],
+      "type": "Conference",
+      "format": "Hybrid",
+      "price": "Paid",
+      "url": "https://www.ietf.org/meeting/127/",
+      "description": "Work alongside people designing Internet standards. Includes working-group meetings and a November 14–15 hackathon.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": null
+    },
+    {
+      "id": "ietf-127-hackathon",
+      "calendar": "tech",
+      "name": "IETF 127 Hackathon",
+      "start": "2026-11-14",
+      "end": "2026-11-15",
+      "city": "San Francisco",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Development",
+        "Connectivity"
+      ],
+      "type": "Hackathon",
+      "format": "Hybrid",
+      "price": "Free",
+      "url": "https://www.ietf.org/meeting/hackathons/127-hackathon/",
+      "description": "Build and test implementations of Internet standards with other engineers.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": null
+    },
+    {
+      "id": "aws-reinvent-2026",
+      "calendar": "tech",
+      "name": "AWS re:Invent",
+      "start": "2026-11-30",
+      "end": "2026-12-04",
+      "city": "Las Vegas",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Cloud & DevOps",
+        "AI"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://aws.amazon.com/events/reinvent/",
+      "description": "Technical sessions, hands-on workshops and meetings with cloud engineers.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": {
+        "level": "Sponsored attendance",
+        "status": "Closed",
+        "url": "https://aws.amazon.com/events/reinvent/experiences/all-builders-welcome/",
+        "coverage": "The All Builders Welcome grant supports in-person attendance. Review the terms for exact coverage.",
+        "eligibility": "Early-career technologists in the first five years of their career; selected university students.",
+        "deadline": null
+      },
+      "priceLabel": "US$2,499 full conference pass"
+    },
+    {
+      "id": "wsc-2026",
+      "calendar": "tech",
+      "name": "Winter Simulation Conference",
+      "start": "2026-12-06",
+      "end": "2026-12-09",
+      "city": "Glasgow",
+      "country": "United Kingdom",
+      "continent": "Europe",
+      "topics": [
+        "AI",
+        "Development"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://meetings.informs.org/wordpress/wsc2026/",
+      "description": "Research and applications of simulation, including work on climate resilience.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": {
+        "level": "Travel grant",
+        "status": "Open",
+        "url": "https://meetings.informs.org/wordpress/wsc2026/wsc-2026-di-travel-grants-registration-fee-waivers-and-expression-of-interest-for-mentorship-program/",
+        "coverage": "Up to US$1,500, reimbursed after attendance and presentation; visa fees excluded. Registration waivers are a separate award.",
+        "eligibility": "Researchers from economically disadvantaged or underrepresented regions with accepted WSC work. Review the full criteria.",
+        "deadline": "2026-10-15",
+        "deadlineNote": "23:59 Anywhere on Earth",
+        "payment": "Reimbursement",
+        "audience": [
+          "Researchers",
+          "Students"
+        ],
+        "steps": [
+          "Confirm you have accepted WSC 2026 work and meet the criteria.",
+          "Prepare proof of status, submission IDs and registration confirmation.",
+          "Prepare a motivation statement, trip budget and advisor or manager details.",
+          "Submit through the official D&I support form by October 15."
+        ]
+      }
+    },
+    {
+      "id": "gitex-2026",
+      "calendar": "tech",
+      "name": "GITEX Global",
+      "start": "2026-12-07",
+      "end": "2026-12-11",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "continent": "Asia",
+      "topics": [
+        "AI",
+        "Startups",
+        "Development"
+      ],
+      "type": "Trade show",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://www.gitex.com/",
+      "description": "Explore enterprise technology and meet global companies at Expo City Dubai. Summit: December 7; exhibition: December 8–11.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": null
+    },
+    {
+      "id": "blackhat-mea-2026",
+      "calendar": "tech",
+      "name": "Black Hat MEA",
+      "start": "2026-12-01",
+      "end": "2026-12-03",
+      "city": "Riyadh",
+      "country": "Saudi Arabia",
+      "continent": "Asia",
+      "topics": [
+        "Security"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://blackhatmea.com/overview",
+      "description": "Security briefings, open-source tools, technical demonstrations and capture-the-flag activities.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": null
+    },
+    {
+      "id": "blackhat-europe-2026",
+      "calendar": "tech",
+      "name": "Black Hat Europe",
+      "start": "2026-12-07",
+      "end": "2026-12-10",
+      "city": "London",
+      "country": "United Kingdom",
+      "continent": "Europe",
+      "topics": [
+        "Security"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://blackhat.com/upcoming.html",
+      "description": "Security training and briefings at ExCeL London. Individual programmes have different dates.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": null
+    },
+    {
+      "id": "blackhat-india-2026",
+      "calendar": "tech",
+      "name": "Black Hat India",
+      "start": "2026-10-27",
+      "end": "2026-10-30",
+      "city": "Bengaluru",
+      "country": "India",
+      "continent": "Asia",
+      "topics": [
+        "Security"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://blackhat.com/upcoming.html",
+      "description": "Security training and research sessions at the Sheraton Grand, Bengaluru.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": null
+    },
+    {
+      "id": "sharkfest-europe-2026",
+      "calendar": "tech",
+      "name": "SharkFest Europe",
+      "start": "2026-11-02",
+      "end": "2026-11-06",
+      "city": "Brussels",
+      "country": "Belgium",
+      "continent": "Europe",
+      "topics": [
+        "Security",
+        "Connectivity"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://sharkfest.wireshark.org/sfeu/",
+      "description": "Learn packet analysis with Wireshark practitioners and contributors.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": {
+        "level": "Ticket scholarship",
+        "status": "Check deadline",
+        "url": "https://sharkfest.wireshark.org/sfeu/women-in-tech/",
+        "coverage": "Conference and a pre-conference training track. Flights and lodging excluded.",
+        "eligibility": "Women in technology. Two scholarships are offered.",
+        "deadline": null,
+        "audience": [
+          "Women in tech"
+        ]
+      }
+    },
+    {
+      "id": "adc-2026",
+      "calendar": "tech",
+      "name": "Audio Developer Conference",
+      "start": "2026-11-09",
+      "end": "2026-11-11",
+      "city": "Bristol",
+      "country": "United Kingdom",
+      "continent": "Europe",
+      "topics": [
+        "Development"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://audio.dev/",
+      "description": "Technical talks and community discussions for audio software developers.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": {
+        "level": "Ticket scholarship",
+        "status": "Closed",
+        "url": "https://audio.dev/diversity/",
+        "coverage": "Complimentary ticket. Ten selected recipients also receive three hotel nights; airfare excluded.",
+        "eligibility": "Developers facing underrepresentation or financial barriers.",
+        "deadline": "2026-09-21"
+      }
+    },
+    {
+      "id": "apsipa-2026",
+      "calendar": "tech",
+      "name": "APSIPA Annual Summit and Conference",
+      "start": "2026-11-09",
+      "end": "2026-11-12",
+      "city": "Bangkok",
+      "country": "Thailand",
+      "continent": "Asia",
+      "topics": [
+        "AI",
+        "Development"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://www.apsipa2026.org/grants.html",
+      "description": "Signal and information processing research and applications.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": {
+        "level": "Travel grant",
+        "status": "Closed",
+        "url": "https://www.apsipa2026.org/grants.html",
+        "coverage": "Limited student travel assistance. Awardees have already been announced.",
+        "eligibility": "Students presenting accepted research.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Researchers"
+        ]
+      }
+    },
+    {
+      "id": "neurips-2026-sydney",
+      "calendar": "tech",
+      "name": "NeurIPS · Sydney",
+      "start": "2026-12-06",
+      "end": "2026-12-12",
+      "city": "Sydney",
+      "country": "Australia",
+      "continent": "Oceania",
+      "topics": [
+        "AI"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://neurips.cc/Conferences/2026",
+      "description": "Machine learning research, presentations and community sessions. Sydney hosts the main conference; Atlanta and Paris are satellite locations.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": {
+        "level": "Ticket & accommodation",
+        "status": "Closed",
+        "url": "https://nips.cc/Conferences/2026/FinancialAssistance",
+        "coverage": "Selected awards include registration and prepaid lodging. Flights, meals and transport excluded.",
+        "eligibility": "Financial need, research contributions and community participation considered.",
+        "deadline": "2026-10-06"
+      }
+    },
+    {
+      "id": "neurips-2026-atlanta",
+      "calendar": "tech",
+      "name": "NeurIPS · Atlanta",
+      "start": "2026-12-09",
+      "end": "2026-12-13",
+      "city": "Atlanta",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "AI"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://neurips.cc/Conferences/2026",
+      "description": "Machine learning research, presentations and community sessions. Sydney hosts the main conference; Atlanta and Paris are satellite locations.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": {
+        "level": "Ticket & accommodation",
+        "status": "Closed",
+        "url": "https://nips.cc/Conferences/2026/FinancialAssistance",
+        "coverage": "Selected awards include registration and prepaid lodging. Flights, meals and transport excluded.",
+        "eligibility": "Financial need, research contributions and community participation considered.",
+        "deadline": "2026-10-06"
+      }
+    },
+    {
+      "id": "neurips-2026-paris",
+      "calendar": "tech",
+      "name": "NeurIPS · Paris",
+      "start": "2026-12-09",
+      "end": "2026-12-13",
+      "city": "Paris",
+      "country": "France",
+      "continent": "Europe",
+      "topics": [
+        "AI"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://neurips.cc/Conferences/2026",
+      "description": "Machine learning research, presentations and community sessions. Sydney hosts the main conference; Atlanta and Paris are satellite locations.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": {
+        "level": "Ticket & accommodation",
+        "status": "Closed",
+        "url": "https://nips.cc/Conferences/2026/FinancialAssistance",
+        "coverage": "Selected awards include registration and prepaid lodging. Flights, meals and transport excluded.",
+        "eligibility": "Financial need, research contributions and community participation considered.",
+        "deadline": "2026-10-06"
+      }
+    },
+    {
+      "id": "ces-2027",
+      "calendar": "tech",
+      "name": "CES",
+      "start": "2027-01-06",
+      "end": "2027-01-09",
+      "city": "Las Vegas",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "AI",
+        "Digital health",
+        "Connectivity"
+      ],
+      "type": "Trade show",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://www.ces.tech/about-ces/about-ces/",
+      "description": "Consumer electronics, mobility and digital health across a major technology exhibition.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": null
+    },
+    {
+      "id": "fosdem-2027",
+      "calendar": "tech",
+      "name": "FOSDEM",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "city": "Brussels",
+      "country": "Belgium",
+      "continent": "Europe",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Free",
+      "url": "https://fosdem.org/2027/",
+      "description": "A community gathering for free and open-source software developers.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": null
+    },
+    {
+      "id": "web-summit-qatar-2027",
+      "calendar": "tech",
+      "name": "Web Summit Qatar",
+      "start": "2027-01-31",
+      "end": "2027-02-03",
+      "city": "Doha",
+      "country": "Qatar",
+      "continent": "Asia",
+      "topics": [
+        "Startups",
+        "AI"
+      ],
+      "type": "Summit",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://qatar.websummit.com/essentials/venue/",
+      "description": "Connect with the startup ecosystem at Doha Exhibition and Convention Center.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": null
+    },
+    {
+      "id": "mwc-2027",
+      "calendar": "tech",
+      "name": "MWC Barcelona",
+      "start": "2027-03-01",
+      "end": "2027-03-04",
+      "city": "Barcelona",
+      "country": "Spain",
+      "continent": "Europe",
+      "topics": [
+        "Connectivity",
+        "AI",
+        "Digital health"
+      ],
+      "type": "Trade show",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://www.mwcbarcelona.com/",
+      "description": "Telecom, connected industries and AI at Fira Gran Via.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": null
+    },
+    {
+      "id": "sxsw-2027",
+      "calendar": "tech",
+      "name": "SXSW Conferences & Festivals",
+      "start": "2027-03-15",
+      "end": "2027-03-21",
+      "city": "Austin",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Startups",
+        "AI",
+        "Digital health"
+      ],
+      "type": "Festival",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://sxsw.com/2026/south-by-southwest-2027-dates-announced/",
+      "description": "Technology meets creative industries. Innovation programming runs March 15–20; the wider festivals continue through March 21.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": null
+    },
+    {
+      "id": "hannover-2027",
+      "calendar": "tech",
+      "name": "Hannover Messe",
+      "start": "2027-04-05",
+      "end": "2027-04-08",
+      "city": "Hannover",
+      "country": "Germany",
+      "continent": "Europe",
+      "topics": [
+        "AI",
+        "Connectivity"
+      ],
+      "type": "Trade show",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://www.hannovermesse.de/de/fuer-besucher/oeffnungszeiten/",
+      "description": "Industrial automation, energy systems and manufacturing technology.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": null
+    },
+    {
+      "id": "fast27",
+      "calendar": "tech",
+      "name": "FAST ’27",
+      "start": "2027-02-23",
+      "end": "2027-02-25",
+      "city": "Renton",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Development"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://www.usenix.org/conference/fast27",
+      "description": "File systems and storage technology research.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": {
+        "level": "Programme to watch",
+        "status": "Not announced",
+        "url": "https://www.usenix.org/grant-programs",
+        "coverage": "USENIX runs grant programmes; event-specific 2027 coverage and deadlines must be confirmed.",
+        "eligibility": "Eligibility varies by programme. No event-specific award is confirmed.",
+        "deadline": null
+      }
+    },
+    {
+      "id": "srecon27americas",
+      "calendar": "tech",
+      "name": "SREcon Americas",
+      "start": "2027-04-12",
+      "end": "2027-04-14",
+      "city": "Seattle",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Cloud & DevOps"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://www.usenix.org/conference/srecon27americas",
+      "description": "Site reliability and systems engineering in practice.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": {
+        "level": "Programme to watch",
+        "status": "Not announced",
+        "url": "https://www.usenix.org/grant-programs",
+        "coverage": "USENIX runs grant programmes; event-specific 2027 coverage and deadlines must be confirmed.",
+        "eligibility": "Eligibility varies by programme. No event-specific award is confirmed.",
+        "deadline": null
+      }
+    },
+    {
+      "id": "nsdi27",
+      "calendar": "tech",
+      "name": "NSDI ’27",
+      "start": "2027-05-11",
+      "end": "2027-05-13",
+      "city": "Providence",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Connectivity"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://www.usenix.org/conference/nsdi27",
+      "description": "Networked systems design and implementation research.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": {
+        "level": "Programme to watch",
+        "status": "Not announced",
+        "url": "https://www.usenix.org/grant-programs",
+        "coverage": "USENIX runs grant programmes; event-specific 2027 coverage and deadlines must be confirmed.",
+        "eligibility": "Eligibility varies by programme. No event-specific award is confirmed.",
+        "deadline": null
+      }
+    },
+    {
+      "id": "sais27",
+      "calendar": "tech",
+      "name": "SAIS ’27",
+      "start": "2027-06-07",
+      "end": "2027-06-08",
+      "city": "Santa Clara",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "AI",
+        "Security"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://www.usenix.org/conference/sais27",
+      "description": "Research on securing agentic AI systems.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": {
+        "level": "Programme to watch",
+        "status": "Not announced",
+        "url": "https://www.usenix.org/grant-programs",
+        "coverage": "USENIX runs grant programmes; event-specific 2027 coverage and deadlines must be confirmed.",
+        "eligibility": "Eligibility varies by programme. No event-specific award is confirmed.",
+        "deadline": null
+      }
+    },
+    {
+      "id": "pepr27",
+      "calendar": "tech",
+      "name": "PEPR ’27",
+      "start": "2027-06-07",
+      "end": "2027-06-08",
+      "city": "Santa Clara",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Security"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://www.usenix.org/conference/pepr27",
+      "description": "Privacy engineering in practice.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": {
+        "level": "Programme to watch",
+        "status": "Not announced",
+        "url": "https://www.usenix.org/grant-programs",
+        "coverage": "USENIX runs grant programmes; event-specific 2027 coverage and deadlines must be confirmed.",
+        "eligibility": "Eligibility varies by programme. No event-specific award is confirmed.",
+        "deadline": null
+      },
+      "aliases": [
+        "2027 USENIX Conference on Privacy Engineering Practice and Respect"
+      ]
+    },
+    {
+      "id": "osdi27",
+      "calendar": "tech",
+      "name": "OSDI ’27",
+      "start": "2027-07-07",
+      "end": "2027-07-09",
+      "city": "Baltimore",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Development"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://www.usenix.org/conference/osdi27",
+      "description": "Operating systems design and implementation research.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": {
+        "level": "Programme to watch",
+        "status": "Not announced",
+        "url": "https://www.usenix.org/grant-programs",
+        "coverage": "USENIX runs grant programmes; event-specific 2027 coverage and deadlines must be confirmed.",
+        "eligibility": "Eligibility varies by programme. No event-specific award is confirmed.",
+        "deadline": null
+      }
+    },
+    {
+      "id": "soups2027",
+      "calendar": "tech",
+      "name": "SOUPS",
+      "start": "2027-08-08",
+      "end": "2027-08-10",
+      "city": "Denver",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Security"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://www.usenix.org/conference/soups2027",
+      "description": "Usable privacy and security research.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": {
+        "level": "Programme to watch",
+        "status": "Not announced",
+        "url": "https://www.usenix.org/grant-programs",
+        "coverage": "USENIX runs grant programmes; event-specific 2027 coverage and deadlines must be confirmed.",
+        "eligibility": "Eligibility varies by programme. No event-specific award is confirmed.",
+        "deadline": null
+      },
+      "aliases": [
+        "Twenty-Third Symposium on Usable Privacy and Security"
+      ]
+    },
+    {
+      "id": "usenixsecurity27",
+      "calendar": "tech",
+      "name": "USENIX Security",
+      "start": "2027-08-11",
+      "end": "2027-08-13",
+      "city": "Denver",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Security"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://www.usenix.org/conference/usenixsecurity27",
+      "description": "Security research across software, systems and networks.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": {
+        "level": "Programme to watch",
+        "status": "Not announced",
+        "url": "https://www.usenix.org/grant-programs",
+        "coverage": "USENIX runs grant programmes; event-specific 2027 coverage and deadlines must be confirmed.",
+        "eligibility": "Eligibility varies by programme. No event-specific award is confirmed.",
+        "deadline": null
+      }
+    },
+    {
+      "id": "srecon27emea",
+      "calendar": "tech",
+      "name": "SREcon Europe / Middle East / Africa",
+      "start": "2027-10-05",
+      "end": "2027-10-07",
+      "city": "Dublin",
+      "country": "Ireland",
+      "continent": "Europe",
+      "topics": [
+        "Cloud & DevOps"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://www.usenix.org/conference/srecon27emea",
+      "description": "Practical systems engineering and reliability discussions.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": null,
+      "aliases": [
+        "SREcon27 Europe/Middle East/Africa"
+      ]
+    },
+    {
+      "id": "wad-2027",
+      "calendar": "tech",
+      "name": "WeAreDevelopers World Congress",
+      "start": "2027-07-14",
+      "end": "2027-07-16",
+      "city": "Berlin",
+      "country": "Germany",
+      "continent": "Europe",
+      "topics": [
+        "Development",
+        "AI"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://www.wearedevelopers.com/world-congress/diversity-scholarships",
+      "description": "A developer congress with technical talks and networking.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": {
+        "level": "Ticket scholarship",
+        "status": "Open",
+        "url": "https://www.wearedevelopers.com/world-congress/diversity-scholarships",
+        "coverage": "Onsite conference ticket. Travel and lodging coverage are not stated.",
+        "eligibility": "People from underrepresented groups in the developer community.",
+        "deadline": "2027-05-31",
+        "audience": [
+          "Professionals",
+          "Students",
+          "Community contributors"
+        ]
+      }
+    },
+    {
+      "id": "pyho-2026",
+      "calendar": "tech",
+      "name": "PyHo · The Builders Conference",
+      "start": "2026-10-23",
+      "end": "2026-10-24",
+      "city": "Ho",
+      "country": "Ghana",
+      "continent": "Africa",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://2026.pythonho.com/",
+      "description": "A community-led Python conference with talks and a coding sprint.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": {
+        "level": "Regional travel grant",
+        "status": "Check deadline",
+        "url": "https://2026.pythonho.com/pages/attend",
+        "coverage": "Support may cover domestic transport or selected costs. International flights are explicitly excluded for 2026.",
+        "eligibility": "People who could not otherwise attend. Ask the organiser about remaining places.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Professionals",
+          "Community contributors"
+        ],
+        "payment": "Confirm with organiser"
+      },
+      "aliases": [
+        "PyHo 2026"
+      ]
+    },
+    {
+      "id": "africa-tech-2027",
+      "calendar": "tech",
+      "name": "Africa Tech Summit Nairobi",
+      "start": "2027-02-10",
+      "end": "2027-02-11",
+      "city": "Nairobi",
+      "country": "Kenya",
+      "continent": "Africa",
+      "topics": [
+        "Startups",
+        "AI"
+      ],
+      "type": "Summit",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://www.africatechsummit.com/nairobi/",
+      "description": "Meet African technology founders and investors. Founders Day takes place February 9.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": null
+    },
+    {
+      "id": "pgconf-eu-2026",
+      "calendar": "tech",
+      "name": "PGConf Europe",
+      "start": "2026-10-20",
+      "end": "2026-10-23",
+      "city": "Valencia",
+      "country": "Spain",
+      "continent": "Europe",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://www.postgresql.org/about/event/pgconfeu-2026-2587/",
+      "description": "PostgreSQL technical talks and a community day.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": {
+        "level": "Travel grant",
+        "status": "Contact organiser",
+        "url": "https://www.postgresql.eu/diversity/travel_scholarship/",
+        "coverage": "Approved expenses reimbursed against receipts after the event. Funding and timing must be confirmed before booking.",
+        "eligibility": "People facing financial or systemic barriers; community benefit matters.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Professionals",
+          "Community contributors"
+        ],
+        "payment": "Reimbursement"
+      }
+    },
+    {
+      "id": "django-girls-ho",
+      "calendar": "tech",
+      "name": "Django Girls Ho",
+      "start": "2026-10-22",
+      "end": "2026-10-23",
+      "city": "Ho",
+      "country": "Ghana",
+      "continent": "Africa",
+      "topics": [
+        "Development"
+      ],
+      "type": "Workshop",
+      "format": "In person",
+      "price": "Free",
+      "url": "https://2026.pythonho.com/",
+      "description": "An introductory Python and Django workshop for women and non-binary people.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed",
+      "funding": null
+    },
+    {
+      "id": "web-7crqun",
+      "calendar": "tech",
+      "name": "Python Leiden User Group",
+      "start": "2026-11-12",
+      "end": "2026-11-12",
+      "city": "Leiden",
+      "country": "Netherlands",
+      "continent": "Europe",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Meetup",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.python.org/events/python-user-group/2212/",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-1twug4y",
+      "calendar": "tech",
+      "name": "Python Meeting Düsseldorf: Sprint",
+      "start": "2026-11-14",
+      "end": "2026-11-15",
+      "city": "Düsseldorf",
+      "country": "Germany",
+      "continent": "Europe",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Meetup",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.python.org/events/python-user-group/2219/",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-ir2ebm",
+      "calendar": "tech",
+      "name": "Django Girls Sogakope 2026",
+      "start": "2026-11-20",
+      "end": "2026-11-21",
+      "city": "Sogakope",
+      "country": "Ghana",
+      "continent": "Africa",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Meetup",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.python.org/events/python-user-group/2153/",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-lv7nz4",
+      "calendar": "tech",
+      "name": "Python Camp Workshop",
+      "start": "2026-12-10",
+      "end": "2026-12-10",
+      "city": "Peshawar",
+      "country": "Pakistan",
+      "continent": "Asia",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Meetup",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.python.org/events/python-user-group/2248/",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-h8m94k",
+      "calendar": "tech",
+      "name": "PyLadies Rivers In-Person Python Workshop",
+      "start": "2027-02-12",
+      "end": "2027-02-13",
+      "city": "Port Harcourt",
+      "country": "Nigeria",
+      "continent": "Africa",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Meetup",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.python.org/events/python-user-group/2213/",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-h17n1s",
+      "calendar": "tech",
+      "name": "PyCon NL 2026",
+      "start": "2026-10-15",
+      "end": "2026-10-15",
+      "city": "Utrecht",
+      "country": "Netherlands",
+      "continent": "Europe",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.python.org/events/python-events/2189/",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-17vxkwf",
+      "calendar": "tech",
+      "name": "PyCon Ireland 2026",
+      "start": "2026-10-17",
+      "end": "2026-10-17",
+      "city": "Dublin",
+      "country": "Ireland",
+      "continent": "Europe",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.python.org/events/python-events/2183/",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-1f104ip",
+      "calendar": "tech",
+      "name": "PyCon Taiwan",
+      "start": "2026-10-17",
+      "end": "2026-10-18",
+      "city": "Taipei City",
+      "country": "Taiwan",
+      "continent": "Asia",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.python.org/events/python-events/2203/",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-1qz4dlg",
+      "calendar": "tech",
+      "name": "PyCon Panamá 2026",
+      "start": "2026-10-22",
+      "end": "2026-10-23",
+      "city": "Panama City",
+      "country": "Panama",
+      "continent": "North America",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.python.org/events/python-events/2211/",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-1i4hkub",
+      "calendar": "tech",
+      "name": "Swiss Python Summit 2026",
+      "start": "2026-10-22",
+      "end": "2026-10-23",
+      "city": "Rapperswil",
+      "country": "Switzerland",
+      "continent": "Europe",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.python.org/events/python-events/2169/",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-1ipq21e",
+      "calendar": "tech",
+      "name": "SREcon26 Europe/Middle East/Africa",
+      "start": "2026-10-13",
+      "end": "2026-10-15",
+      "city": "Dublin",
+      "country": "Ireland",
+      "continent": "Europe",
+      "topics": [
+        "Development"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.usenix.org/conference/srecon26emea",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-19x6u3p",
+      "calendar": "tech",
+      "name": "Python Meeting Düsseldorf",
+      "start": "2027-11-30",
+      "end": "2027-11-30",
+      "city": "Düsseldorf",
+      "country": "Germany",
+      "continent": "Europe",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Meetup",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.python.org/events/python-user-group/2217/",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-xa7idm",
+      "calendar": "tech",
+      "name": "PyBeach 2026",
+      "start": "2026-10-24",
+      "end": "2026-10-24",
+      "city": "Santa Monica",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.python.org/events/python-events/2180/",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-1q63q2v",
+      "calendar": "tech",
+      "name": "FastAPI Conf 2026",
+      "start": "2026-10-28",
+      "end": "2026-10-28",
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "continent": "Europe",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.python.org/events/python-events/2172/",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-hti91e",
+      "calendar": "tech",
+      "name": "PyConFR 2026",
+      "start": "2026-10-29",
+      "end": "2026-11-01",
+      "city": "Bidart",
+      "country": "France",
+      "continent": "Europe",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.python.org/events/python-events/2188/",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-hvb4p9",
+      "calendar": "tech",
+      "name": "PyCon ES 2026",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "city": "Barcelona",
+      "country": "Spain",
+      "continent": "Europe",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.python.org/events/python-events/2150/",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-1lw60ki",
+      "calendar": "tech",
+      "name": "Python Pizza Istanbul",
+      "start": "2026-11-14",
+      "end": "2026-11-14",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "continent": "Asia",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.python.org/events/python-events/2201/",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-vzlkgm",
+      "calendar": "tech",
+      "name": "XtremePython 2026",
+      "start": "2026-11-17",
+      "end": "2026-11-17",
+      "city": "Online",
+      "country": "Online",
+      "continent": "Online",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Conference",
+      "format": "Online",
+      "price": "Not announced",
+      "url": "https://www.python.org/events/python-events/2142/",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-1pvxxp2",
+      "calendar": "tech",
+      "name": "5th USENIX Symposium on Vehicle Security and Privacy",
+      "start": "2027-08-09",
+      "end": "2027-08-10",
+      "city": "Denver",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Development"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.usenix.org/conferences#5thusenixsymposiumonvehiclesecurityandprivacy",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-f8zfqk",
+      "calendar": "tech",
+      "name": "26th USENIX Conference on File and Storage Technologies",
+      "start": "2028-02-28",
+      "end": "2028-03-01",
+      "city": "Seattle",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Development"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.usenix.org/conferences#26thusenixconferenceonfileandstoragetechnologies",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-1j427x4",
+      "calendar": "tech",
+      "name": "25th USENIX Symposium on Networked Systems Design and Implementation",
+      "start": "2028-05-09",
+      "end": "2028-05-11",
+      "city": "Santa Clara",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Development"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.usenix.org/conferences#25thusenixsymposiumonnetworkedsystemsdesignandimplementation",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-208zgf",
+      "calendar": "tech",
+      "name": "Twenty-Fourth Symposium on Usable Privacy and Security",
+      "start": "2028-08-13",
+      "end": "2028-08-15",
+      "city": "Seattle",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Development"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.usenix.org/conferences#twentyfourthsymposiumonusableprivacyandsecurity",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    },
+    {
+      "id": "web-15qgrt1",
+      "calendar": "tech",
+      "name": "6th USENIX Symposium on Vehicle Security and Privacy",
+      "start": "2028-08-14",
+      "end": "2028-08-15",
+      "city": "Seattle",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Development"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.usenix.org/conferences#6thusenixsymposiumonvehiclesecurityandprivacy",
+      "description": "See the organizer’s website for programme, registration and participation details.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Source imported",
+      "funding": null
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "isoc-2027",
+      "name": "Internet Society Fellowship 2027",
+      "region": "Global",
+      "topics": [
+        "Connectivity",
+        "Security",
+        "Digital inclusion"
+      ],
+      "level": "Travel support",
+      "status": "Open",
+      "deadline": "2026-12-18",
+      "trainingDeadline": "2026-11-22",
+      "url": "https://www.internetsociety.org/fellowship/",
+      "coverage": "Mentorship, travel support for a relevant Internet event, and a potential project stipend up to US$5,000. Exact travel arrangements follow programme terms.",
+      "eligibility": "Complete prerequisite training and propose a practical project in Internet policy, connectivity or safety. Global applicants; competitive selection.",
+      "audience": [
+        "Professionals",
+        "Community contributors",
+        "Researchers"
+      ],
+      "steps": [
+        "Enroll in free pre-fellowship training by November 22, 2026.",
+        "Complete the required modules and develop a feasible community project.",
+        "Use the application link sent after completing training.",
+        "Apply by December 18, 2026; selection is competitive."
+      ],
+      "verifiedAt": "2026-10-13"
+    },
+    {
+      "id": "pg-europe",
+      "name": "PostgreSQL Europe travel scholarships",
+      "region": "Europe",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "level": "Travel grant",
+      "status": "Contact organiser",
+      "deadline": null,
+      "url": "https://www.postgresql.eu/diversity/travel_scholarship/",
+      "coverage": "Approved expenses reimbursed after the event against receipts. The committee sets a maximum award; upfront travel money may be needed.",
+      "eligibility": "People facing financial or systemic barriers. Demonstrate a benefit to the PostgreSQL community; nearby events are favoured.",
+      "audience": [
+        "Professionals",
+        "Students",
+        "Community contributors"
+      ],
+      "steps": [
+        "Choose a relevant upcoming PostgreSQL Europe event.",
+        "Email diversity@postgresql.eu yourself with your request and budget.",
+        "Ask about eligibility, timing and the amount before booking."
+      ],
+      "verifiedAt": "2026-10-13"
+    }
+  ],
+  "sources": [
+    {
+      "id": "python-meetups-2",
+      "name": "Python.org meetups · page 2",
+      "url": "https://www.python.org/events/python-user-group/?page=2",
+      "status": "ok",
+      "count": 4,
+      "checkedAt": "2026-10-13T16:26:56.507Z"
+    },
+    {
+      "id": "python-conferences",
+      "name": "Python.org conferences",
+      "url": "https://www.python.org/events/python-events/",
+      "status": "ok",
+      "count": 6,
+      "checkedAt": "2026-10-13T16:26:56.507Z"
+    },
+    {
+      "id": "python-conferences-2",
+      "name": "Python.org conferences · page 2",
+      "url": "https://www.python.org/events/python-events/?page=2",
+      "status": "ok",
+      "count": 6,
+      "checkedAt": "2026-10-13T16:26:56.507Z"
+    },
+    {
+      "id": "python-meetups",
+      "name": "Python.org community meetups",
+      "url": "https://www.python.org/events/python-user-group/",
+      "status": "ok",
+      "count": 6,
+      "checkedAt": "2026-10-13T16:26:56.507Z"
+    },
+    {
+      "id": "ces",
+      "name": "CES",
+      "url": "https://www.ces.tech/",
+      "status": "no structured events",
+      "count": 0,
+      "checkedAt": "2026-10-13T16:26:56.507Z"
+    },
+    {
+      "id": "usenix",
+      "name": "USENIX",
+      "url": "https://www.usenix.org/conferences",
+      "status": "ok",
+      "count": 11,
+      "checkedAt": "2026-10-13T16:26:56.507Z"
+    },
+    {
+      "id": "mwc",
+      "name": "MWC Barcelona",
+      "url": "https://www.mwcbarcelona.com/",
+      "status": "ok",
+      "count": 1,
+      "checkedAt": "2026-10-13T16:26:56.507Z"
+    },
+    {
+      "id": "gitex",
+      "name": "GITEX",
+      "url": "https://www.gitex.com/",
+      "status": "no structured events",
+      "count": 0,
+      "checkedAt": "2026-10-13T16:26:56.507Z"
+    },
+    {
+      "id": "pyho",
+      "name": "PyHo",
+      "url": "https://2026.pythonho.com/",
+      "status": "no structured events",
+      "count": 0,
+      "checkedAt": "2026-10-13T16:26:56.507Z"
+    },
+    {
+      "id": "qatar",
+      "name": "Web Summit Qatar",
+      "url": "https://qatar.websummit.com/",
+      "status": "ok",
+      "count": 1,
+      "checkedAt": "2026-10-13T16:26:56.507Z"
+    },
+    {
+      "id": "fosdem",
+      "name": "FOSDEM",
+      "url": "https://fosdem.org/2027/",
+      "status": "no structured events",
+      "count": 0,
+      "checkedAt": "2026-10-13T16:26:56.507Z"
+    },
+    {
+      "id": "africa-tech",
+      "name": "Africa Tech Summit",
+      "url": "https://www.africatechsummit.com/nairobi/",
+      "status": "ok",
+      "count": 1,
+      "checkedAt": "2026-10-13T16:26:56.507Z"
+    },
+    {
+      "id": "websummit",
+      "name": "Web Summit",
+      "url": "https://websummit.com/",
+      "status": "ok",
+      "count": 1,
+      "checkedAt": "2026-10-13T16:26:56.507Z"
+    }
+  ],
+  "lastScrape": "2026-10-13T16:26:56.507Z"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "korvexa-calendar",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-10-01",
+  "r2_buckets": [{"binding": "BUCKET", "bucket_name": "korvexa-calendar"}],
+  "triggers": {"crons": ["0 6 * * *"]}
+}

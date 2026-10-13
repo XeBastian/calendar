@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#111211"><meta name="description" content="Find your next technology conference, meetup or workshop. Explore events worldwide, discover travel support and add them to your calendar."><title>Tech Calendar · Korvexa</title><link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml"><link rel="stylesheet" href="/style.css?v=2"><script type="module" src="/app.js?v=2"></script></head><body>
+<a class="skip" href="#main">Skip to events</a>
+<header class="app-rail">
+<a class="brand" href="/" aria-label="Korvexa Calendar home"><span class="brand-symbol">k<span>✳</span></span></a>
+<nav aria-label="Main navigation">
+<a href="/" data-nav="events" aria-label="Calendar" title="Calendar"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="4"/><path d="M8 3v4m8-4v4M4 11h16m-10 4h4"/></svg></a>
+<a href="/?tab=saved" data-nav="saved" aria-label="Saved events" title="Saved events"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4Z"/></svg><span id="saved-count"></span></a>
+<a href="/?tab=funding" data-nav="funding" aria-label="Funding" title="Funding"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18m-9-9h18m-15-6 12 12M6 18 18 6"/></svg></a>
+</nav>
+<button class="rail-about" data-action="about" aria-label="About this calendar" title="About this calendar">?</button>
+</header>
+<main id="main"><div class="loading" aria-label="Loading calendar"><span class="loading-mark">✳</span></div></main>
+<dialog id="subscribe-dialog"><form method="dialog"><button class="dialog-close" aria-label="Close">×</button></form><h2>Take it with you.</h2><p>Subscribe to your selection. Your calendar app will receive updates.</p><div class="dialog-buttons"><a id="google-subscribe" class="button dark" target="_blank" rel="noopener">Add to Google Calendar ↗</a><a id="apple-subscribe" class="button">Subscribe in Apple Calendar ↗</a></div><label for="feed-url">Calendar feed URL</label><div class="copy-field"><input id="feed-url" readonly><button data-action="copy-feed">Copy</button></div><details class="subscription-help"><summary>How subscriptions work <span>+</span></summary><p class="fine">In Google Calendar, use “Other calendars → From URL”. In Apple Calendar, use “File → New Calendar Subscription”. A subscription receives updates; a downloaded .ics file is a snapshot.</p></details><a id="download-feed" class="text-link">Download matching events (.ics) ↓</a><p class="fine">Private preview: download an .ics file. Live subscriptions need a public calendar feed.</p></dialog>
+<dialog id="about-dialog"><form method="dialog"><button class="dialog-close" aria-label="Close">×</button></form><h2>About the calendar.</h2><p>Korvexa Calendar gathers technology events from organizer websites and trusted community listings. Every event links to its source.</p><p>Ticket price and travel support are separate. Grants may be competitive, restricted to certain applicants, or paid as reimbursements. Always check the organizer’s terms before applying.</p><h3>Keeping it current</h3><p>Our importer reads structured event data and community event listings. Source failures preserve the last available records. Funding terms are curated separately to avoid making unsupported promises.</p><div id="source-status"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+</body></html>
