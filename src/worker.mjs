@@ -38,7 +38,7 @@ export default {
    const types={'html':'text/html','css':'text/css','js':'text/javascript','mjs':'text/javascript','svg':'image/svg+xml','json':'application/json','txt':'text/plain'};
    if(ASSETS[path])return reply(request.method==='HEAD'?null:ASSETS[path],200,{'Content-Type':types[path.split('.').at(-1)]+'; charset=utf-8','Cache-Control':'public, max-age=300'});
    if(path==='/'||/^\/(events|opportunities)\/[^/]+$/.test(path))return reply(request.method==='HEAD'?null:ASSETS['/index.html'],200,{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-cache'});
-   return reply('Not found',404);
+   return reply(request.method==='HEAD'?null:ASSETS['/404.html'],404,{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-cache'});
   }catch(error){console.error(error.message);return reply(JSON.stringify({error:'Calendar temporarily unavailable'}),503,{'Content-Type':'application/json','Retry-After':'60'});}
  },
  async scheduled(controller,env,ctx){ctx.waitUntil(refreshSnapshot(env));}

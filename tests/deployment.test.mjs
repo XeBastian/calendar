@@ -105,10 +105,10 @@ test('detail page rewrites resolve to the app shell while API and feed use a fun
 test('official brand assets are served without binary corruption by the portable Worker',async()=>{for(const [name,type] of [['korvexa-logo.jpg','image/jpeg'],['korvexa-mark.png','image/png']]){const response=await request('/'+name);assert.equal(response.status,200);assert.equal(response.headers.get('content-type'),type);assert.deepEqual(Buffer.from(await response.arrayBuffer()),await readFile(join(fixture,'public',name)));}});
 
 
-test('publisher setup serves consistent verification identifiers without activating ads',async()=>{
+test('publisher setup serves consistent verification identifiers with ads active',async()=>{
  const config=await (await request('/ads-config.json')).json();
  assert.equal(config.adsense.publisherId,'ca-pub-3654708143461818');
- assert.equal(config.enabled,false);
+ assert.equal(config.enabled,true);
  assert.equal(config.siteUrl,'https://calendar.korvexa.dev');
  const ads=await request('/ads.txt');
  assert.equal(ads.status,200);
@@ -116,7 +116,7 @@ test('publisher setup serves consistent verification identifiers without activat
  assert.equal(await ads.text(),'google.com, pub-3654708143461818, DIRECT, f08c47fec0942fa0\n');
  const html=await readFile(join(fixture,'public/index.html'),'utf8');
  assert.match(html,/<meta name="google-adsense-account" content="ca-pub-3654708143461818">/);
- assert.doesNotMatch(html,/<script[^>]+src=["'][^"']*(?:googlesyndication|doubleclick)/i);
+ assert.match(html,/<script[^>]+src=["'][^"']*pagead2\.googlesyndication/i);
 });
 
 test('privacy routes work in the portable Worker and Vercel output, including HEAD',async()=>{
@@ -126,7 +126,7 @@ test('privacy routes work in the portable Worker and Vercel output, including HE
   assert.match(response.headers.get('content-type'),/^text\/html/);
   const html=await response.text();
   assert.match(html,/Privacy, clearly/);
-  assert.match(html,/Advertising is currently disabled/);
+  assert.match(html,/This calendar uses Google AdSense/);
   assert.match(html,/mailto:hello@korvexa.com/);
  }
  const head=await request('/privacy',{},'HEAD');
