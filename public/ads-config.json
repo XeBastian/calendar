@@ -1,11 +1,11 @@
 {
-  "enabled": false,
+  "enabled": true,
   "adsense": {
     "publisherId": "ca-pub-3654708143461818",
     "slots": {
-      "event-inline": "",
-      "event-actions": "",
-      "list-break": ""
+      "event-inline": "4476959643",
+      "event-actions": "7100832565",
+      "list-break": "5456578402"
     }
   },
   "adManager": {
