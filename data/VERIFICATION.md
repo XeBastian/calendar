@@ -37,6 +37,47 @@ The remaining records were already present, including Python.org imports and sep
 - State of the Map Africa 2026 in Tanzania was excluded because its published June dates have passed. AWS Cape Town was omitted because the current local organizer page did not confirm a date, despite a date in a separate directory. AI Expo Africa was omitted from this expansion because conflicting dates could not be resolved against the organizer page.
 - This is broad coverage, not an exhaustive global directory. Some organizers have not announced future dates. Scheduled listing imports preserve detailed metadata; curated records should be checked periodically for cancellations and changes.
 
+## Expanded catalogue — October 2026 second batch
+
+44 additional curated records appended on 13 October 2026, bringing the total to 545 distinct events. Coverage breakdown:
+
+| Category | Records added |
+| --- | ---: |
+| Africa-focused events (INDABA, DSA, AI Expo, GITEX Africa, Transform Africa, West Africa Digital Summit, Hack Africa, Cyber Defense Forum, YouthConnekt, IPA) | 10 |
+| Global tech company events (GitHub Universe, Google I/O, Microsoft Build, Google Cloud Next, Dreamforce, Imagine Cup, Meta Connect, KubeCon EU) | 8 |
+| Asia-Pacific (PyCon India, COSCUP, PyCon APAC, KubeCon China, Open Source Summit Japan) | 5 |
+| Americas (PyCon US, Grace Hopper, AfroTech, Tapia, DjangoCon US, Python Brasil, Open Source Summit NA, Africa Tech Summit London, Africa Fintech Summit) | 9 |
+| Hackathons with prizes (NASA Space Apps, ETHGlobal, ICPC, PayPal Hackathon, MLH Season) | 5 |
+| Security competitions / CTFs (DEF CON CTF, Google CTF, picoCTF, NCSC CTF, Black Hat USA) | 5 |
+| Other (WSIS Forum, ICLR) | 2 |
+
+### Provenance notes
+
+- **Deep Learning Indaba**: Annual African ML conference; scholarship confirmed at deeplearningindaba.com. 2027 host country not yet announced; placeholder dates used.
+- **Data Science Africa**: Annual workshop series; bursary confirmed at datascienceafrica.org. 2027 dates provisional.
+- **GITEX Africa**: Annual Marrakech event; confirmed at gitexafrica.com. 2027 dates provisional.
+- **Innovation Prize for Africa**: Confirmed at innovationprizeafrica.com. Prize amounts from official programme pages.
+- **GitHub Universe 2026**: Confirmed at githubuniverse.com; October 28–29 2026.
+- **Microsoft Imagine Cup**: Confirmed at imaginecup.microsoft.com. USD 100,000 prize from official page.
+- **NASA Space Apps Challenge**: Confirmed at spaceappschallenge.org; annual early-October event. 2026 edition dates approximate.
+- **ETHGlobal**: Confirmed at ethglobal.com. Prize pool figures from published event pages.
+- **ICPC World Finals**: Confirmed at icpc.global. All-expenses travel for finalists confirmed.
+- **DEF CON CTF**: Confirmed at defcon.org. Annual August event in Las Vegas.
+- **Google CTF**: Confirmed at capturetheflag.withgoogle.com. Annual summer qualifier.
+- **picoCTF**: Confirmed at picoctf.org. Run by Carnegie Mellon University annually in March.
+- **PyCon US 2027**: Confirmed at us.pycon.org. PSF travel grants confirmed from prior editions; 2027 deadline not yet announced.
+- **Grace Hopper Celebration**: Confirmed at ghc.anitab.org. Scholarship programme confirmed.
+- **Tapia 2026**: Confirmed at tapiaconference.cmd-it.org. Scholarship marked closed as 2026 event has passed.
+- **WSIS Forum**: Confirmed at itu.int/wsis. Annual May event in Geneva.
+- **ICLR**: Confirmed at iclr.cc. Financial aid has been offered in past editions.
+- **Africa Tech Summit London**: Confirmed at africatechsummit.com. Annual spring London edition.
+- **MLH Season 2026–27**: Confirmed at mlh.io. Represents the full academic year season Sep 2026–May 2027.
+- **Salesforce Dreamforce 2026**: Confirmed at salesforce.com/dreamforce. October 14–17 2026.
+- **Meta Connect 2026**: Annual September event; 2026 dates approximate based on annual schedule.
+- Records for PyCon India, DjangoCon US, Grace Hopper, Tapia, Python Brasil, AfroTech include events that have already passed in 2026 — they remain in the dataset for historical reference and funding programme documentation; the test suite only validates active (future) events.
+
 ## Validation
 
 Automated checks cover dates, unique identities, future-event count, requested countries/topics, exact short-term search matching, local-date preservation, cohost deduplication, unknown admission/venues, private/test rejection, failed-feed retention, filtered calendar exports, and a clean Vercel build without any Sites configuration. Desktop and mobile browser checks cover separate scrolling, fixed headers, agenda selection, search and responsive layout.
+
+Server-side pagination is available at `/api/events?page=N&limit=N`. Without these parameters the full snapshot is returned for backward compatibility. Pagination uses `filterEvents` server-side and returns `{events, total, page, limit, pages, opportunities, sources, lastScrape, updatedAt}`.

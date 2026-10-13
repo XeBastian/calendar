@@ -27,7 +27,21 @@ export default {
     const snapshot=await readSnapshot(env);const stale=!snapshot.lastScrape||Date.now()-Date.parse(snapshot.lastScrape)>86400000;
     if(stale&&env.BUCKET)ctx.waitUntil(refreshSnapshot(env).catch(err=>console.error('Import failed:',err.message)));
     if(path==='/api/sources')return reply(JSON.stringify({lastScrape:snapshot.lastScrape,sources:snapshot.sources}),200,{'Content-Type':'application/json','Cache-Control':'no-store'});
-    if(path==='/api/events')return reply(JSON.stringify(snapshot),200,{'Content-Type':'application/json','Cache-Control':'no-store'});
+    if(path==='/api/events'){
+     // Pagination: ?page=N&limit=N slices the events array.
+     // Omitting page/limit returns the full snapshot for backward compatibility.
+     // Metadata (opportunities, sources, lastScrape, updatedAt) is always included.
+     const pageParam=url.searchParams.get('page'),limitParam=url.searchParams.get('limit');
+     if(pageParam!==null||limitParam!==null){
+      const limit=Math.min(Math.max(parseInt(limitParam,10)||100,1),500);
+      const page=Math.max(parseInt(pageParam,10)||1,1);
+      const offset=(page-1)*limit;
+      const filtered=filterEvents(snapshot.events,url.searchParams);
+      const slice=filtered.slice(offset,offset+limit);
+      return reply(JSON.stringify({events:slice,total:filtered.length,page,limit,pages:Math.ceil(filtered.length/limit),opportunities:snapshot.opportunities,sources:snapshot.sources,lastScrape:snapshot.lastScrape,updatedAt:snapshot.updatedAt}),200,{'Content-Type':'application/json','Cache-Control':'no-store'});
+     }
+     return reply(JSON.stringify(snapshot),200,{'Content-Type':'application/json','Cache-Control':'no-store'});
+    }
     let events=filterEvents(snapshot.events,url.searchParams);
     if(path.startsWith('/api/events/')){const id=decodeURIComponent(path.split('/').at(-1).replace(/\.ics$/,''));events=snapshot.events.filter(e=>e.id===id);if(!events.length)return reply('Event not found',404);}
     if(url.searchParams.has('ids')){const ids=new Set(url.searchParams.get('ids').split(','));events=events.filter(e=>ids.has(e.id));}

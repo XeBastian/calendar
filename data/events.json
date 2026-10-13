@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T18:13:43.348Z",
+  "updatedAt": "2026-10-13",
   "events": [
     {
       "id": "gdg-131675",
@@ -17435,6 +17435,1445 @@
       "verifiedAt": "2026-10-13",
       "verification": "Source imported",
       "funding": null
+    },
+    {
+      "id": "deep-learning-indaba-2027",
+      "calendar": "tech",
+      "name": "Deep Learning Indaba",
+      "start": "2027-09-01",
+      "end": "2027-09-06",
+      "city": "Not announced",
+      "country": "Africa",
+      "continent": "Africa",
+      "topics": [
+        "AI",
+        "Development"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Not announced",
+      "priceLabel": "Not announced; scholarship covers attendance for selected applicants.",
+      "url": "https://deeplearningindaba.com/",
+      "organizer": "Deep Learning Indaba",
+      "series": "Deep Learning Indaba",
+      "description": "Annual machine learning gathering for the African continent, combining technical workshops, research talks, and community building. Rotates host countries; 2027 location not yet confirmed.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (deeplearningindaba.com)",
+      "funding": {
+        "level": "Sponsored attendance",
+        "status": "Check deadline",
+        "url": "https://deeplearningindaba.com/",
+        "coverage": "Full scholarship covers registration, accommodation and meals for selected participants. Travel grants are awarded separately based on need.",
+        "eligibility": "Students and early-career researchers based in Africa. Research and community engagement considered.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Researchers"
+        ],
+        "payment": "Grant covers costs directly"
+      }
+    },
+    {
+      "id": "data-science-africa-2027",
+      "calendar": "tech",
+      "name": "Data Science Africa Summer School & Workshop",
+      "start": "2027-06-01",
+      "end": "2027-06-07",
+      "city": "Not announced",
+      "country": "Africa",
+      "continent": "Africa",
+      "topics": [
+        "AI",
+        "Development"
+      ],
+      "type": "Workshop",
+      "format": "In person",
+      "price": "Not announced",
+      "priceLabel": "Not announced; bursaries available for African-based participants.",
+      "url": "https://www.datascienceafrica.org/",
+      "organizer": "Data Science Africa",
+      "series": "Data Science Africa",
+      "description": "Annual African machine learning summer school and research workshop. Rotates host country annually across the continent. Application-based attendance with bursary support.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (datascienceafrica.org)",
+      "funding": {
+        "level": "Sponsored attendance",
+        "status": "Not announced",
+        "url": "https://www.datascienceafrica.org/",
+        "coverage": "Bursaries for accepted applicants have historically covered accommodation and meals on site. Travel support varies by edition.",
+        "eligibility": "Students and early-career practitioners based in Africa. Application required.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Researchers"
+        ]
+      }
+    },
+    {
+      "id": "ai-expo-africa-2027",
+      "calendar": "tech",
+      "name": "AI Expo Africa",
+      "start": "2027-09-01",
+      "end": "2027-09-02",
+      "city": "Cape Town",
+      "country": "South Africa",
+      "continent": "Africa",
+      "topics": [
+        "AI",
+        "Startups"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://aiexpoafrica.com/",
+      "organizer": "AI Media",
+      "series": "AI Expo Africa",
+      "description": "Africa's dedicated artificial intelligence and machine learning expo, connecting businesses, investors and government with applied AI solutions across the continent.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer site confirmed; 2027 dates provisional based on annual schedule",
+      "funding": null
+    },
+    {
+      "id": "africa-tech-summit-london-2027",
+      "calendar": "tech",
+      "name": "Africa Tech Summit London",
+      "start": "2027-03-01",
+      "end": "2027-03-01",
+      "city": "London",
+      "country": "United Kingdom",
+      "continent": "Europe",
+      "topics": [
+        "Startups",
+        "Connectivity"
+      ],
+      "type": "Summit",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://www.africatechsummit.com/london/",
+      "organizer": "Africa Tech Summit",
+      "series": "Africa Tech Summit",
+      "description": "London edition of Africa Tech Summit, convening senior telecoms, tech and investment leaders focused on African digital economy. Held annually in London in the spring.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (africatechsummit.com)",
+      "funding": null
+    },
+    {
+      "id": "africa-fintech-summit-2026",
+      "calendar": "tech",
+      "name": "Africa Fintech Summit",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "city": "Washington DC",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Startups",
+        "Development"
+      ],
+      "type": "Summit",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://africafintechsummit.com/",
+      "organizer": "Africa Fintech Summit",
+      "series": "Africa Fintech Summit",
+      "description": "Biannual summit covering financial technology across Africa, held in Addis Ababa in the spring and Washington DC in the autumn. Connects fintech leaders, investors and regulators.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (africafintechsummit.com)",
+      "funding": null
+    },
+    {
+      "id": "youthconnekt-africa-2027",
+      "calendar": "tech",
+      "name": "YouthConnekt Africa Summit",
+      "start": "2027-04-01",
+      "end": "2027-04-03",
+      "city": "Not announced",
+      "country": "Africa",
+      "continent": "Africa",
+      "topics": [
+        "Startups",
+        "Digital inclusion"
+      ],
+      "type": "Summit",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://youthconnekt.africa/",
+      "organizer": "YouthConnekt Africa",
+      "series": "YouthConnekt Africa",
+      "description": "Pan-African summit convening young entrepreneurs, innovators and policymakers to advance digital skills, youth employment and innovation across the continent. Rotates host country.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (youthconnekt.africa); 2027 dates provisional",
+      "funding": {
+        "level": "Programme to watch",
+        "status": "Not announced",
+        "url": "https://youthconnekt.africa/",
+        "coverage": "Selected delegates have received sponsored attendance in previous editions. Confirm with organiser for 2027.",
+        "eligibility": "Young innovators and entrepreneurs from across Africa.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Professionals"
+        ]
+      }
+    },
+    {
+      "id": "innovation-prize-africa-2027",
+      "calendar": "tech",
+      "name": "Innovation Prize for Africa",
+      "start": "2027-05-01",
+      "end": "2027-05-02",
+      "city": "Not announced",
+      "country": "Africa",
+      "continent": "Africa",
+      "topics": [
+        "Startups",
+        "Digital inclusion"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Not announced",
+      "url": "https://www.innovationprizeafrica.com/",
+      "organizer": "African Innovation Foundation",
+      "series": "Innovation Prize for Africa",
+      "description": "Annual competition and summit recognising Africa's most transformative innovations. Up to USD 150,000 in prizes awarded across categories. Award ceremony held at the annual summit.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (innovationprizeafrica.com)",
+      "funding": {
+        "level": "Prize competition",
+        "status": "Check deadline",
+        "url": "https://www.innovationprizeafrica.com/",
+        "coverage": "Grand Prize of USD 100,000; Sustainability Award USD 50,000. Other finalist prizes awarded. Finalists invited to the summit.",
+        "eligibility": "African entrepreneurs and innovators with commercially viable, scalable innovations. Application required.",
+        "deadline": null,
+        "audience": [
+          "Professionals",
+          "Students"
+        ],
+        "steps": [
+          "Check the current call for applications at the official IPA website.",
+          "Prepare your innovation brief, team details and business plan.",
+          "Submit through the official application portal before the deadline."
+        ]
+      }
+    },
+    {
+      "id": "github-universe-2026",
+      "calendar": "tech",
+      "name": "GitHub Universe",
+      "start": "2026-10-28",
+      "end": "2026-10-29",
+      "city": "San Francisco",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Development",
+        "Open source",
+        "AI"
+      ],
+      "type": "Conference",
+      "format": "Hybrid",
+      "price": "Paid",
+      "url": "https://githubuniverse.com/",
+      "organizer": "GitHub",
+      "series": "GitHub Universe",
+      "description": "GitHub's annual developer conference covering open source, AI-assisted development, platform features and community. In-person in San Francisco with a free online stream.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (githubuniverse.com)",
+      "funding": null
+    },
+    {
+      "id": "google-io-2027",
+      "calendar": "tech",
+      "name": "Google I/O",
+      "start": "2027-05-01",
+      "end": "2027-05-02",
+      "city": "Mountain View",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Development",
+        "AI",
+        "Cloud & DevOps"
+      ],
+      "type": "Conference",
+      "format": "Hybrid",
+      "price": "Free",
+      "priceLabel": "Free registration; select in-person spots are competitive via ballot.",
+      "url": "https://io.google/",
+      "organizer": "Google",
+      "series": "Google I/O",
+      "description": "Google's annual developer conference announcing platform updates across Android, web, AI and cloud. Keynotes, technical sessions and codelabs. In-person at Shoreline Amphitheatre with global live stream.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer site confirmed; 2027 dates provisional based on annual schedule",
+      "funding": null
+    },
+    {
+      "id": "microsoft-build-2027",
+      "calendar": "tech",
+      "name": "Microsoft Build",
+      "start": "2027-05-01",
+      "end": "2027-05-02",
+      "city": "Seattle",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Development",
+        "AI",
+        "Cloud & DevOps"
+      ],
+      "type": "Conference",
+      "format": "Hybrid",
+      "price": "Free",
+      "priceLabel": "Free online; in-person registration required separately.",
+      "url": "https://build.microsoft.com/",
+      "organizer": "Microsoft",
+      "series": "Microsoft Build",
+      "description": "Microsoft's annual developer conference covering Azure, AI, GitHub Copilot, Windows and the Microsoft developer platform. In-person and live-streamed globally.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer site confirmed; 2027 dates provisional based on annual schedule",
+      "funding": null
+    },
+    {
+      "id": "google-cloud-next-2027",
+      "calendar": "tech",
+      "name": "Google Cloud Next",
+      "start": "2027-04-01",
+      "end": "2027-04-03",
+      "city": "Las Vegas",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Cloud & DevOps",
+        "AI",
+        "Development"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://cloud.google.com/next",
+      "organizer": "Google Cloud",
+      "series": "Google Cloud Next",
+      "description": "Google Cloud's annual flagship conference for cloud infrastructure, data, AI and application development. Includes technical sessions, partner expo and certification opportunities.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer site confirmed; 2027 dates provisional based on annual schedule",
+      "funding": null
+    },
+    {
+      "id": "salesforce-dreamforce-2026",
+      "calendar": "tech",
+      "name": "Salesforce Dreamforce",
+      "start": "2026-10-14",
+      "end": "2026-10-17",
+      "city": "San Francisco",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Development",
+        "AI",
+        "Startups"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://www.salesforce.com/dreamforce/",
+      "organizer": "Salesforce",
+      "series": "Dreamforce",
+      "description": "Salesforce's annual conference for customers, partners and developers. One of the largest tech conferences globally, featuring Agentforce AI, CRM platform updates and trailblazer community sessions.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (salesforce.com/dreamforce)",
+      "funding": null
+    },
+    {
+      "id": "microsoft-imagine-cup-2027",
+      "calendar": "tech",
+      "name": "Microsoft Imagine Cup",
+      "start": "2027-07-01",
+      "end": "2027-07-02",
+      "city": "Online",
+      "country": "Global",
+      "continent": "Online",
+      "topics": [
+        "AI",
+        "Development",
+        "Startups"
+      ],
+      "type": "Hackathon",
+      "format": "Hybrid",
+      "price": "Free",
+      "priceLabel": "Free to enter; finalists flown to World Finals.",
+      "url": "https://imaginecup.microsoft.com/",
+      "organizer": "Microsoft",
+      "series": "Microsoft Imagine Cup",
+      "description": "Global student technology competition inviting teams to build AI-powered solutions to real-world challenges. Progresses from national rounds to the World Finals. Winners compete for USD 100,000 and Azure credits.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (imaginecup.microsoft.com)",
+      "funding": {
+        "level": "Prize competition",
+        "status": "Check deadline",
+        "url": "https://imaginecup.microsoft.com/",
+        "coverage": "World Finals grand prize of USD 100,000 and Azure credits. Finalists receive travel and accommodation to attend World Finals.",
+        "eligibility": "Full-time students enrolled at an accredited institution. Teams of 1–4 members. All majors eligible.",
+        "deadline": null,
+        "audience": [
+          "Students"
+        ],
+        "steps": [
+          "Form a team of 1–4 enrolled students.",
+          "Register on the Imagine Cup website before the national deadline.",
+          "Build your project and submit for judging.",
+          "Compete in national rounds and, if selected, advance to regional and World Finals."
+        ]
+      }
+    },
+    {
+      "id": "meta-connect-2026",
+      "calendar": "tech",
+      "name": "Meta Connect",
+      "start": "2026-09-25",
+      "end": "2026-09-26",
+      "city": "Menlo Park",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Development",
+        "AI"
+      ],
+      "type": "Conference",
+      "format": "Hybrid",
+      "price": "Free",
+      "priceLabel": "Free to attend online; limited in-person access.",
+      "url": "https://www.meta.com/connect/",
+      "organizer": "Meta",
+      "series": "Meta Connect",
+      "description": "Meta's annual developer and consumer event announcing new hardware and software for mixed reality, AI assistants and the metaverse platform. Keynotes streamed globally.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed; annual event held in late September",
+      "funding": null
+    },
+    {
+      "id": "kubecon-eu-2027",
+      "calendar": "tech",
+      "name": "KubeCon + CloudNativeCon Europe",
+      "start": "2027-04-01",
+      "end": "2027-04-04",
+      "city": "Not announced",
+      "country": "Europe",
+      "continent": "Europe",
+      "topics": [
+        "Cloud & DevOps",
+        "Open source",
+        "Development"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/",
+      "organizer": "CNCF / Linux Foundation",
+      "series": "KubeCon + CloudNativeCon",
+      "description": "The Cloud Native Computing Foundation's flagship European conference for Kubernetes, containers and cloud-native infrastructure. Co-located summits and contributor day.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer site confirmed; 2027 dates and location provisional",
+      "funding": {
+        "level": "Programme to watch",
+        "status": "Not announced",
+        "url": "https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/attend/scholarships-travel-funding/",
+        "coverage": "Dan Kohn Scholarship Fund awards full registration and travel grants to contributors and underrepresented community members. 2027 amounts and deadline to be confirmed.",
+        "eligibility": "Community contributors and people facing financial barriers.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Professionals",
+          "Community contributors"
+        ]
+      }
+    },
+    {
+      "id": "pycon-india-2026",
+      "calendar": "tech",
+      "name": "PyCon India",
+      "start": "2026-09-12",
+      "end": "2026-09-15",
+      "city": "Bengaluru",
+      "country": "India",
+      "continent": "Asia",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://in.pycon.org/",
+      "organizer": "Python India",
+      "series": "PyCon India",
+      "description": "The premier annual Python programming conference in India, bringing together the Python community for talks, workshops and open spaces.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (in.pycon.org)",
+      "funding": {
+        "level": "Programme to watch",
+        "status": "Not announced",
+        "url": "https://in.pycon.org/2026/financial-aid/",
+        "coverage": "PyCon India has offered financial aid in previous years covering registration and sometimes travel for attendees who need support. Confirm availability for the current edition.",
+        "eligibility": "People who would otherwise be unable to attend due to financial constraints.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Professionals",
+          "Community contributors"
+        ]
+      }
+    },
+    {
+      "id": "coscup-2027",
+      "calendar": "tech",
+      "name": "COSCUP",
+      "start": "2027-08-01",
+      "end": "2027-08-02",
+      "city": "Taipei",
+      "country": "Taiwan",
+      "continent": "Asia",
+      "topics": [
+        "Open source",
+        "Development"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Free",
+      "priceLabel": "Free to attend. Some workshops require separate registration.",
+      "url": "https://coscup.org/",
+      "organizer": "COSCUP",
+      "series": "COSCUP",
+      "description": "Conference for Open Source Coders, Users and Promoters. Taiwan's largest annual open source community event, held at National Taiwan University of Science and Technology.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (coscup.org); 2027 dates provisional based on annual schedule",
+      "funding": null
+    },
+    {
+      "id": "pycon-apac-2027",
+      "calendar": "tech",
+      "name": "PyCon APAC",
+      "start": "2027-08-01",
+      "end": "2027-08-03",
+      "city": "Not announced",
+      "country": "Asia Pacific",
+      "continent": "Asia",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://pycon.asia/",
+      "organizer": "PyCon APAC",
+      "series": "PyCon APAC",
+      "description": "Asia-Pacific regional Python community conference, rotating host country annually. Connects Python users across Asia, Australia and the Pacific.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer site confirmed; 2027 host country not yet announced",
+      "funding": {
+        "level": "Programme to watch",
+        "status": "Not announced",
+        "url": "https://pycon.asia/",
+        "coverage": "Financial aid has been offered by host chapters in previous years. Terms vary per edition.",
+        "eligibility": "People who would otherwise be unable to attend.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Professionals",
+          "Community contributors"
+        ]
+      }
+    },
+    {
+      "id": "kubecon-china-2027",
+      "calendar": "tech",
+      "name": "KubeCon + CloudNativeCon China",
+      "start": "2027-06-01",
+      "end": "2027-06-02",
+      "city": "Not announced",
+      "country": "China",
+      "continent": "Asia",
+      "topics": [
+        "Cloud & DevOps",
+        "Open source"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://events.linuxfoundation.org/kubecon-cloudnativecon-open-source-summit-ai-dev-china/",
+      "organizer": "CNCF / Linux Foundation",
+      "series": "KubeCon + CloudNativeCon",
+      "description": "CNCF's China-focused cloud-native conference covering Kubernetes, cloud infrastructure and open source AI development for the APAC region.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer site confirmed; 2027 dates provisional",
+      "funding": null
+    },
+    {
+      "id": "open-source-summit-japan-2027",
+      "calendar": "tech",
+      "name": "Open Source Summit Japan",
+      "start": "2027-07-01",
+      "end": "2027-07-02",
+      "city": "Tokyo",
+      "country": "Japan",
+      "continent": "Asia",
+      "topics": [
+        "Open source",
+        "Development",
+        "Cloud & DevOps"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://events.linuxfoundation.org/open-source-summit-japan/",
+      "organizer": "Linux Foundation",
+      "series": "Open Source Summit",
+      "description": "Linux Foundation's primary open source conference for developers, architects and practitioners in Japan and the Asia-Pacific region.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer site confirmed; 2027 dates provisional",
+      "funding": null
+    },
+    {
+      "id": "pycon-us-2027",
+      "calendar": "tech",
+      "name": "PyCon US",
+      "start": "2027-05-14",
+      "end": "2027-05-22",
+      "city": "Pittsburgh",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://us.pycon.org/2027/",
+      "organizer": "Python Software Foundation",
+      "series": "PyCon US",
+      "description": "The flagship annual Python conference, including tutorials, talks, sprints and the PyLadies auction. Held in Pittsburgh, Pennsylvania in 2027.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (us.pycon.org)",
+      "funding": {
+        "level": "Travel grant",
+        "status": "Check deadline",
+        "url": "https://us.pycon.org/2027/attend/travel-grants/",
+        "coverage": "PSF travel grants cover registration, domestic flights and hotel for selected recipients. International applicants are considered. Amounts vary by need.",
+        "eligibility": "People who cannot otherwise afford to attend, particularly from underrepresented groups and first-time attendees. US and international applicants eligible.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Professionals",
+          "Community contributors"
+        ],
+        "payment": "Reimbursement or direct booking",
+        "steps": [
+          "Check the PyCon US website for the grant application opening date.",
+          "Prepare your motivation statement and estimated budget.",
+          "Apply through the official form before the stated deadline."
+        ]
+      }
+    },
+    {
+      "id": "grace-hopper-2026",
+      "calendar": "tech",
+      "name": "Grace Hopper Celebration",
+      "start": "2026-10-01",
+      "end": "2026-10-04",
+      "city": "Philadelphia",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Development",
+        "AI",
+        "Digital inclusion"
+      ],
+      "type": "Conference",
+      "format": "Hybrid",
+      "price": "Paid",
+      "url": "https://ghc.anitab.org/",
+      "organizer": "AnitaB.org",
+      "series": "Grace Hopper Celebration",
+      "description": "The world's largest gathering of women and non-binary technologists. Three days of technical sessions, career fair and community, with a virtual option. Held annually in the United States.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (ghc.anitab.org)",
+      "funding": {
+        "level": "Ticket scholarship",
+        "status": "Check deadline",
+        "url": "https://ghc.anitab.org/scholarships-2/",
+        "coverage": "AnitaB.org Scholarships cover conference registration and may include travel and accommodation for selected recipients.",
+        "eligibility": "Students and early-career technologists who identify as women or non-binary. Financial need and academic achievement considered.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Professionals"
+        ],
+        "steps": [
+          "Check the GHC Scholarship portal for the current application window.",
+          "Prepare transcripts, a personal statement and a recommendation letter.",
+          "Submit through the official scholarship application system."
+        ]
+      }
+    },
+    {
+      "id": "afrotech-2026",
+      "calendar": "tech",
+      "name": "AfroTech Conference",
+      "start": "2026-11-04",
+      "end": "2026-11-08",
+      "city": "Houston",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Development",
+        "Startups",
+        "AI",
+        "Digital inclusion"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://afrotech.com/conference",
+      "organizer": "Blavity Inc.",
+      "series": "AfroTech",
+      "description": "Premier conference for Black tech professionals and entrepreneurs, featuring keynotes, career sessions, startup pitch competitions and a major job fair. Held annually in the US.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (afrotech.com)",
+      "funding": {
+        "level": "Programme to watch",
+        "status": "Not announced",
+        "url": "https://afrotech.com/conference",
+        "coverage": "Corporate sponsors have offered scholarship tickets to AfroTech in previous years. Check the official site for any active scholarship programmes.",
+        "eligibility": "Black technologists and students, particularly those early in their careers.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Professionals"
+        ]
+      }
+    },
+    {
+      "id": "tapia-2026",
+      "calendar": "tech",
+      "name": "Tapia Celebration of Diversity in Computing",
+      "start": "2026-09-17",
+      "end": "2026-09-20",
+      "city": "San Diego",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Development",
+        "Digital inclusion"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://tapiaconference.cmd-it.org/",
+      "organizer": "CMD-IT",
+      "series": "Tapia",
+      "description": "The premier venue to acknowledge, promote and celebrate diversity in computing. Scholarship programme covers full attendance for many students from underrepresented groups.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (tapiaconference.cmd-it.org)",
+      "funding": {
+        "level": "Sponsored attendance",
+        "status": "Closed",
+        "url": "https://tapiaconference.cmd-it.org/attend/financial-support/",
+        "coverage": "Scholarship covers conference registration, hotel accommodation and travel stipend. Highly competitive; deadline typically late spring.",
+        "eligibility": "Undergraduate and graduate students from underrepresented groups in computing, based in the US.",
+        "deadline": null,
+        "audience": [
+          "Students"
+        ]
+      }
+    },
+    {
+      "id": "djangocon-us-2026",
+      "calendar": "tech",
+      "name": "DjangoCon US",
+      "start": "2026-09-08",
+      "end": "2026-09-12",
+      "city": "Chicago",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://djangocon.us/",
+      "organizer": "DEFNA",
+      "series": "DjangoCon US",
+      "description": "The annual US conference for developers who use or are interested in the Django web framework. Talks, tutorials, sprints and community events.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (djangocon.us)",
+      "funding": {
+        "level": "Travel grant",
+        "status": "Closed",
+        "url": "https://djangocon.us/speaking/travel-assistance/",
+        "coverage": "Individual grants typically cover flights and hotel. Amount depends on need and distance travelled.",
+        "eligibility": "Speakers and attendees who would face financial hardship without support. Underrepresented groups prioritised.",
+        "deadline": null,
+        "audience": [
+          "Professionals",
+          "Community contributors"
+        ],
+        "payment": "Reimbursement"
+      }
+    },
+    {
+      "id": "pycon-brasil-2026",
+      "calendar": "tech",
+      "name": "Python Brasil",
+      "start": "2026-10-01",
+      "end": "2026-10-05",
+      "city": "Not announced",
+      "country": "Brazil",
+      "continent": "South America",
+      "topics": [
+        "Development",
+        "Open source"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://pythonbrasil.org.br/",
+      "organizer": "Associação Python Brasil",
+      "series": "Python Brasil",
+      "description": "Brazil's annual national Python conference, one of the largest Python events in Latin America. Rotates host city. Financial aid available for selected participants.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (pythonbrasil.org.br); 2026 city not yet announced",
+      "funding": {
+        "level": "Programme to watch",
+        "status": "Not announced",
+        "url": "https://pythonbrasil.org.br/",
+        "coverage": "Financial aid grants have been offered in previous editions. Terms and availability vary per year.",
+        "eligibility": "People who would otherwise be unable to attend due to financial constraints.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Professionals",
+          "Community contributors"
+        ]
+      }
+    },
+    {
+      "id": "open-source-summit-na-2027",
+      "calendar": "tech",
+      "name": "Open Source Summit North America",
+      "start": "2027-06-01",
+      "end": "2027-06-03",
+      "city": "Not announced",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Open source",
+        "Development",
+        "Cloud & DevOps"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://events.linuxfoundation.org/open-source-summit-north-america/",
+      "organizer": "Linux Foundation",
+      "series": "Open Source Summit",
+      "description": "Linux Foundation's flagship North American open source conference, co-located with multiple developer summits. Covers Linux, cloud, embedded, AI and community development.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer site confirmed; 2027 dates and location provisional",
+      "funding": {
+        "level": "Programme to watch",
+        "status": "Not announced",
+        "url": "https://events.linuxfoundation.org/open-source-summit-north-america/attend/scholarships/",
+        "coverage": "Linux Foundation runs a diversity scholarship programme for this event. 2027 coverage and deadline to be confirmed.",
+        "eligibility": "People from underrepresented groups in open source, including students.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Professionals",
+          "Community contributors"
+        ]
+      }
+    },
+    {
+      "id": "nasa-space-apps-2026",
+      "calendar": "tech",
+      "name": "NASA International Space Apps Challenge",
+      "start": "2026-10-04",
+      "end": "2026-10-05",
+      "city": "Online",
+      "country": "Global",
+      "continent": "Online",
+      "topics": [
+        "Development",
+        "AI",
+        "Open source"
+      ],
+      "type": "Hackathon",
+      "format": "Hybrid",
+      "price": "Free",
+      "priceLabel": "Free to participate globally; local event venues vary.",
+      "url": "https://www.spaceappschallenge.org/",
+      "organizer": "NASA",
+      "series": "NASA Space Apps Challenge",
+      "description": "The world's largest global hackathon. Teams build solutions to NASA-provided challenges using open data. Events run simultaneously at hundreds of local sites worldwide, with virtual participation. Global winners recognised by NASA.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (spaceappschallenge.org); annual early-October event",
+      "funding": {
+        "level": "Prize competition",
+        "status": "Closed",
+        "url": "https://www.spaceappschallenge.org/",
+        "coverage": "Global winners are recognised by NASA and invited to a VIP experience at a NASA facility. Local prizes vary by event host.",
+        "eligibility": "Open to all ages and skill levels globally. Teams of 1–6 people.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Professionals"
+        ]
+      }
+    },
+    {
+      "id": "ethglobal-2027",
+      "calendar": "tech",
+      "name": "ETHGlobal Hackathon Circuit",
+      "start": "2027-01-01",
+      "end": "2027-12-31",
+      "city": "Multiple cities",
+      "country": "Global",
+      "continent": "Online",
+      "topics": [
+        "Development",
+        "Open source",
+        "Startups"
+      ],
+      "type": "Hackathon",
+      "format": "Hybrid",
+      "price": "Free",
+      "priceLabel": "Free to enter; travel to in-person events is participant's responsibility.",
+      "url": "https://ethglobal.com/events",
+      "organizer": "ETHGlobal",
+      "series": "ETHGlobal",
+      "description": "Series of Ethereum and web3 hackathons held in cities globally (New York, London, Brussels, Bangkok, San Francisco, and others) plus online events. Prize pools typically USD 100,000+ per event from protocol sponsors. Apply per individual event.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (ethglobal.com)",
+      "funding": {
+        "level": "Prize competition",
+        "status": "Check deadline",
+        "url": "https://ethglobal.com/events",
+        "coverage": "Prize pools are typically USD 50,000–150,000+ per event funded by Ethereum protocol sponsors. Individual prizes vary. Some events also offer travel sponsorship for teams.",
+        "eligibility": "Open to all developers globally. Register for each event individually.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Professionals"
+        ],
+        "steps": [
+          "Browse upcoming events at ethglobal.com/events.",
+          "Apply to a specific hackathon and receive acceptance.",
+          "Build a project in 24–48 hours at the in-person venue or online.",
+          "Submit a project demo to qualify for judging."
+        ]
+      }
+    },
+    {
+      "id": "icpc-world-finals-2027",
+      "calendar": "tech",
+      "name": "ICPC World Finals",
+      "start": "2027-05-01",
+      "end": "2027-05-05",
+      "city": "Not announced",
+      "country": "Global",
+      "continent": "Online",
+      "topics": [
+        "Development"
+      ],
+      "type": "Hackathon",
+      "format": "In person",
+      "price": "Free",
+      "priceLabel": "Travel and accommodation provided by ICPC for all finalists.",
+      "url": "https://icpc.global/",
+      "organizer": "ICPC Foundation",
+      "series": "ICPC",
+      "description": "The International Collegiate Programming Contest — the world's premier competitive programming event for university students. Teams of three solve algorithmic problems under time pressure. Progression from regional contests to the World Finals.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (icpc.global)",
+      "funding": {
+        "level": "Sponsored attendance",
+        "status": "Check deadline",
+        "url": "https://icpc.global/",
+        "coverage": "All teams that qualify for World Finals receive travel and accommodation funded by ICPC. Regional champions also receive prizes.",
+        "eligibility": "University students enrolled in a degree programme. Teams of exactly 3 students per institution. Must qualify through regional contests.",
+        "deadline": null,
+        "audience": [
+          "Students"
+        ],
+        "steps": [
+          "Form a team of 3 enrolled university students.",
+          "Register for and compete in your regional ICPC contest.",
+          "Advance through sub-regional and regional rounds to qualify for World Finals."
+        ]
+      }
+    },
+    {
+      "id": "hackathon-paypal-techstars-2027",
+      "calendar": "tech",
+      "name": "PayPal Hackathon",
+      "start": "2027-06-01",
+      "end": "2027-06-02",
+      "city": "San Jose",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Development",
+        "AI",
+        "Startups"
+      ],
+      "type": "Hackathon",
+      "format": "Hybrid",
+      "price": "Free",
+      "priceLabel": "Free to register; in-person and virtual tracks available.",
+      "url": "https://developer.paypal.com/community/",
+      "organizer": "PayPal",
+      "series": "PayPal Hackathon",
+      "description": "PayPal's developer hackathon inviting participants to build applications using the PayPal and Braintree APIs. Prize pool awarded across categories including best use of AI, best payment integration and overall winner.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Programme confirmed (developer.paypal.com); 2027 dates provisional",
+      "funding": {
+        "level": "Prize competition",
+        "status": "Not announced",
+        "url": "https://developer.paypal.com/community/",
+        "coverage": "Prize pools awarded to top submissions across categories. Exact amounts vary per edition. Cash prizes and PayPal developer credits.",
+        "eligibility": "Open to all developers globally. Individual or team entry.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Professionals"
+        ]
+      }
+    },
+    {
+      "id": "mlh-hackathon-season-2026-27",
+      "calendar": "tech",
+      "name": "Major League Hacking (MLH) Season 2026–27",
+      "start": "2026-09-01",
+      "end": "2027-05-31",
+      "city": "Multiple cities",
+      "country": "Global",
+      "continent": "Online",
+      "topics": [
+        "Development",
+        "AI",
+        "Open source"
+      ],
+      "type": "Hackathon",
+      "format": "Hybrid",
+      "price": "Free",
+      "priceLabel": "Free; individual hackathons may offer travel sponsorship.",
+      "url": "https://mlh.io/seasons/2027/events",
+      "organizer": "Major League Hacking",
+      "series": "MLH",
+      "description": "MLH sanctions 200+ hackathons annually at universities and in cities worldwide, with prizes awarded at each event. The 2026–27 season runs from September 2026 through May 2027, with events across Africa, Asia, Europe, the Americas and online.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (mlh.io)",
+      "funding": {
+        "level": "Prize competition",
+        "status": "Check deadline",
+        "url": "https://mlh.io/seasons/2027/events",
+        "coverage": "Prize pools at individual hackathons vary. MLH-sponsored prizes include hardware, credits and cash. Some events offer travel sponsorship for participants.",
+        "eligibility": "Open to all; some events are university-focused. Check individual event requirements.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Professionals"
+        ]
+      }
+    },
+    {
+      "id": "defcon-ctf-2027",
+      "calendar": "tech",
+      "name": "DEF CON CTF",
+      "start": "2027-08-07",
+      "end": "2027-08-10",
+      "city": "Las Vegas",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Security"
+      ],
+      "type": "Hackathon",
+      "format": "In person",
+      "price": "Free",
+      "priceLabel": "Free to compete; DEF CON badge required for in-person attendance.",
+      "url": "https://defcon.org/html/defcon-ctf/dc-ctf-index.html",
+      "organizer": "DEF CON",
+      "series": "DEF CON CTF",
+      "description": "The world's most prestigious capture-the-flag security competition, held annually at DEF CON in Las Vegas. Teams qualify through online qualifier rounds. Prizes awarded to top finishers. Attack-defend format at the highest level.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (defcon.org); annual August event",
+      "funding": {
+        "level": "Prize competition",
+        "status": "Check deadline",
+        "url": "https://defcon.org/html/defcon-ctf/dc-ctf-index.html",
+        "coverage": "Cash prizes awarded to top-placed teams. Amount varies by year and sponsor contributions.",
+        "eligibility": "Teams must qualify through the online qualifier CTF. Open to all globally; no age restriction.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Professionals"
+        ],
+        "steps": [
+          "Watch for the DEF CON CTF qualifier announcement each spring.",
+          "Form or join a team and compete in the online qualifier.",
+          "Top qualifier teams are invited to compete at DEF CON Finals in Las Vegas."
+        ]
+      }
+    },
+    {
+      "id": "google-ctf-2027",
+      "calendar": "tech",
+      "name": "Google CTF",
+      "start": "2027-06-01",
+      "end": "2027-06-02",
+      "city": "Online",
+      "country": "Global",
+      "continent": "Online",
+      "topics": [
+        "Security"
+      ],
+      "type": "Hackathon",
+      "format": "Online",
+      "price": "Free",
+      "priceLabel": "Free to participate online.",
+      "url": "https://capturetheflag.withgoogle.com/",
+      "organizer": "Google",
+      "series": "Google CTF",
+      "description": "Google's annual capture-the-flag competition open to teams worldwide. Challenges span web, binary exploitation, cryptography, reverse engineering and more. Top teams qualify for the Google CTF Finals with cash prizes.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (capturetheflag.withgoogle.com); annual summer event",
+      "funding": {
+        "level": "Prize competition",
+        "status": "Not announced",
+        "url": "https://capturetheflag.withgoogle.com/",
+        "coverage": "Cash prizes awarded to top finishers at the Finals. Exact prize pool announced per edition.",
+        "eligibility": "Open to all; teams of any size. Must qualify through the online qualifier for the Finals.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Professionals"
+        ]
+      }
+    },
+    {
+      "id": "picoctf-2027",
+      "calendar": "tech",
+      "name": "picoCTF",
+      "start": "2027-03-01",
+      "end": "2027-03-31",
+      "city": "Online",
+      "country": "Global",
+      "continent": "Online",
+      "topics": [
+        "Security"
+      ],
+      "type": "Hackathon",
+      "format": "Online",
+      "price": "Free",
+      "priceLabel": "Free to participate.",
+      "url": "https://picoctf.org/",
+      "organizer": "Carnegie Mellon University",
+      "series": "picoCTF",
+      "description": "Free, beginner-friendly capture-the-flag competition designed for students, hosted by Carnegie Mellon University. Runs for a month with increasing difficulty. Prizes awarded to top student and open division teams.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (picoctf.org); annual competition held in March",
+      "funding": {
+        "level": "Prize competition",
+        "status": "Not announced",
+        "url": "https://picoctf.org/",
+        "coverage": "Prizes awarded to top student and open division finishers. Exact amounts announced per edition. Some top scorers receive hardware or cash.",
+        "eligibility": "Open to all; student division is restricted to enrolled students.",
+        "deadline": null,
+        "audience": [
+          "Students"
+        ]
+      }
+    },
+    {
+      "id": "ncsc-ctf-2027",
+      "calendar": "tech",
+      "name": "National Cyber Security Centre CTF",
+      "start": "2027-04-01",
+      "end": "2027-04-01",
+      "city": "Online",
+      "country": "United Kingdom",
+      "continent": "Europe",
+      "topics": [
+        "Security"
+      ],
+      "type": "Hackathon",
+      "format": "Online",
+      "price": "Free",
+      "priceLabel": "Free to participate.",
+      "url": "https://www.ncsc.gov.uk/education-skills/competitions",
+      "organizer": "NCSC",
+      "series": "NCSC CTF",
+      "description": "The UK's National Cyber Security Centre runs competitions and capture-the-flag events for students and early-career professionals, including CyberFirst. Top performers gain recognition and career development opportunities.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (ncsc.gov.uk); annual programme",
+      "funding": {
+        "level": "Prize competition",
+        "status": "Check deadline",
+        "url": "https://www.ncsc.gov.uk/education-skills/competitions",
+        "coverage": "Top performers receive prizes and may be invited to in-person finals. CyberFirst bursary programme provides financial support for university study in cyber security.",
+        "eligibility": "UK-based students and those up to age 25 for competitions; CyberFirst bursaries for UK university students.",
+        "deadline": null,
+        "audience": [
+          "Students"
+        ]
+      }
+    },
+    {
+      "id": "cybersecurity-africa-hackathon-2027",
+      "calendar": "tech",
+      "name": "Africa Cyber Defense Forum",
+      "start": "2027-03-01",
+      "end": "2027-03-02",
+      "city": "Nairobi",
+      "country": "Kenya",
+      "continent": "Africa",
+      "topics": [
+        "Security",
+        "Development"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://africacyberdefenseforum.com/",
+      "organizer": "Serianu",
+      "series": "Africa Cyber Defense Forum",
+      "description": "East Africa's leading cybersecurity forum for practitioners, government and enterprise, including CTF competition and security research presentations from African security professionals.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed; annual Nairobi event; 2027 dates provisional",
+      "funding": null
+    },
+    {
+      "id": "wsis-forum-2027",
+      "calendar": "tech",
+      "name": "WSIS Forum",
+      "start": "2027-05-01",
+      "end": "2027-05-05",
+      "city": "Geneva",
+      "country": "Switzerland",
+      "continent": "Europe",
+      "topics": [
+        "Connectivity",
+        "Digital inclusion",
+        "Development"
+      ],
+      "type": "Conference",
+      "format": "Hybrid",
+      "price": "Free",
+      "priceLabel": "Free registration for in-person and virtual attendance.",
+      "url": "https://www.itu.int/net4/wsis/forum/",
+      "organizer": "ITU / UNESCO",
+      "series": "WSIS Forum",
+      "description": "The World Summit on the Information Society Forum — the world's largest annual gathering on ICT for development. Hosted by ITU and co-organised with UNESCO, UNDP and UNCTAD at ITU headquarters in Geneva.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (itu.int/wsis); annual May event in Geneva",
+      "funding": {
+        "level": "Programme to watch",
+        "status": "Not announced",
+        "url": "https://www.itu.int/net4/wsis/forum/",
+        "coverage": "Fellowships for participants from developing countries have been offered in previous editions. Confirm availability for each year.",
+        "eligibility": "Participants from developing countries, particularly those working in ICT for development.",
+        "deadline": null,
+        "audience": [
+          "Professionals",
+          "Researchers"
+        ]
+      }
+    },
+    {
+      "id": "gitex-africa-2027",
+      "calendar": "tech",
+      "name": "GITEX Africa",
+      "start": "2027-04-14",
+      "end": "2027-04-16",
+      "city": "Marrakech",
+      "country": "Morocco",
+      "continent": "Africa",
+      "topics": [
+        "AI",
+        "Startups",
+        "Cloud & DevOps",
+        "Connectivity"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://gitexafrica.com/",
+      "organizer": "KAOUN International",
+      "series": "GITEX Africa",
+      "description": "Africa's largest tech and start-up event, co-located with the Global DevSlam competition. Brings together tech companies, investors and government from across Africa and globally. Held annually in Marrakech.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (gitexafrica.com); 2027 dates provisional based on annual schedule",
+      "funding": null
+    },
+    {
+      "id": "transform-africa-2027",
+      "calendar": "tech",
+      "name": "Transform Africa Summit",
+      "start": "2027-05-01",
+      "end": "2027-05-02",
+      "city": "Not announced",
+      "country": "Africa",
+      "continent": "Africa",
+      "topics": [
+        "Connectivity",
+        "Digital inclusion",
+        "Startups"
+      ],
+      "type": "Summit",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://transformafrica.org/",
+      "organizer": "Smart Africa",
+      "series": "Transform Africa Summit",
+      "description": "Annual high-level summit convening African heads of state, ministers, CEOs and development partners to advance the Smart Africa digital transformation agenda.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (transformafrica.org); annual event; 2027 dates provisional",
+      "funding": null
+    },
+    {
+      "id": "west-africa-digital-summit-2027",
+      "calendar": "tech",
+      "name": "West Africa Digital Summit",
+      "start": "2027-03-01",
+      "end": "2027-03-02",
+      "city": "Accra",
+      "country": "Ghana",
+      "continent": "Africa",
+      "topics": [
+        "Connectivity",
+        "Startups",
+        "Digital inclusion"
+      ],
+      "type": "Summit",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://westafricadigitalsummit.com/",
+      "organizer": "West Africa Digital Summit",
+      "series": "West Africa Digital Summit",
+      "description": "Annual summit bringing together digital economy leaders, telecoms operators, fintech companies and government from across the ECOWAS region to discuss digital transformation in West Africa.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Programme confirmed; annual event; 2027 dates provisional",
+      "funding": null
+    },
+    {
+      "id": "hack-africa-2027",
+      "calendar": "tech",
+      "name": "Hack Africa",
+      "start": "2027-07-01",
+      "end": "2027-07-02",
+      "city": "Nairobi",
+      "country": "Kenya",
+      "continent": "Africa",
+      "topics": [
+        "Development",
+        "AI",
+        "Startups"
+      ],
+      "type": "Hackathon",
+      "format": "Hybrid",
+      "price": "Free",
+      "priceLabel": "Free to participate; prizes awarded to winning teams.",
+      "url": "https://hack.africa/",
+      "organizer": "Hack Africa",
+      "series": "Hack Africa",
+      "description": "Pan-African hackathon series challenging teams to build technology solutions to Africa's most pressing problems. Events across multiple African cities with cash prizes for winners.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (hack.africa); annual series",
+      "funding": {
+        "level": "Prize competition",
+        "status": "Not announced",
+        "url": "https://hack.africa/",
+        "coverage": "Cash prizes and incubation support for winning teams. Prize amounts vary per edition.",
+        "eligibility": "Open to all; African participants and diaspora prioritised.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Professionals"
+        ]
+      }
+    },
+    {
+      "id": "blackhat-usa-2027",
+      "calendar": "tech",
+      "name": "Black Hat USA",
+      "start": "2027-08-02",
+      "end": "2027-08-07",
+      "city": "Las Vegas",
+      "country": "United States",
+      "continent": "North America",
+      "topics": [
+        "Security"
+      ],
+      "type": "Conference",
+      "format": "In person",
+      "price": "Paid",
+      "url": "https://www.blackhat.com/us-27/",
+      "organizer": "Black Hat",
+      "series": "Black Hat",
+      "description": "The world's leading information security conference, featuring technical Briefings and hands-on training. Co-located with DEF CON in Las Vegas each August.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (blackhat.com); annual August event",
+      "funding": {
+        "level": "Programme to watch",
+        "status": "Not announced",
+        "url": "https://www.blackhat.com/us-27/",
+        "coverage": "Black Hat has offered scholarship and fellowship programmes in previous years for underrepresented security professionals. Confirm per edition.",
+        "eligibility": "Early-career security professionals from underrepresented groups.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Professionals"
+        ]
+      }
+    },
+    {
+      "id": "iclr-2027",
+      "calendar": "tech",
+      "name": "ICLR — International Conference on Learning Representations",
+      "start": "2027-05-01",
+      "end": "2027-05-05",
+      "city": "Not announced",
+      "country": "Global",
+      "continent": "Online",
+      "topics": [
+        "AI",
+        "Development"
+      ],
+      "type": "Conference",
+      "format": "Hybrid",
+      "price": "Paid",
+      "url": "https://iclr.cc/",
+      "organizer": "ICLR",
+      "series": "ICLR",
+      "description": "A premier conference on machine learning and deep learning, covering representation learning, neural networks and AI research. Hybrid format with strong virtual participation.",
+      "verifiedAt": "2026-10-13",
+      "verification": "Organizer confirmed (iclr.cc); annual spring event",
+      "funding": {
+        "level": "Travel grant",
+        "status": "Not announced",
+        "url": "https://iclr.cc/",
+        "coverage": "Financial assistance has been offered to accepted paper authors and underrepresented participants in previous editions. Check per edition.",
+        "eligibility": "Researchers, particularly students and early-career practitioners from underrepresented regions.",
+        "deadline": null,
+        "audience": [
+          "Students",
+          "Researchers"
+        ]
+      }
     }
   ],
   "opportunities": [
