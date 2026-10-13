@@ -1,5 +1,13 @@
 let memorySnapshot=null,refreshing=null;
-async function readSnapshot(env){if(env.BUCKET){const object=await env.BUCKET.get('calendar/tech.json');if(object)return await object.json();}return memorySnapshot||SEED;}
+async function readSnapshot(env){
+ if(env.BUCKET){const object=await env.BUCKET.get('calendar/tech.json');if(object){
+  const persisted=await object.json();
+  const sources=new Map(SEED.sources.map(s=>[s.id,s]));
+  for(const source of persisted.sources||[]){const previous=sources.get(source.id);if(!previous||source.checkedAt>previous.checkedAt)sources.set(source.id,source);}
+  return {...persisted,events:mergeEvents(SEED.events,persisted.events),opportunities:persisted.opportunities||SEED.opportunities,sources:[...sources.values()],updatedAt:[SEED.updatedAt,persisted.updatedAt].filter(Boolean).sort().at(-1)};
+ }}
+ return memorySnapshot||SEED;
+}
 async function refreshSnapshot(env){if(refreshing)return refreshing;refreshing=(async()=>{const snapshot=await readSnapshot(env);const next=await scrape(snapshot);if(env.BUCKET)await env.BUCKET.put('calendar/tech.json',JSON.stringify(next),{httpMetadata:{contentType:'application/json'}});memorySnapshot=next;return next;})();try{return await refreshing;}finally{refreshing=null;}}
 const security={'X-Content-Type-Options':'nosniff','Referrer-Policy':'strict-origin-when-cross-origin','X-Frame-Options':'SAMEORIGIN','Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'"};
 function reply(body,status=200,headers={}){return new Response(body,{status,headers:{...security,...headers}});}
@@ -25,6 +33,7 @@ export default {
     if(url.searchParams.has('ids')){const ids=new Set(url.searchParams.get('ids').split(','));events=events.filter(e=>ids.has(e.id));}
     return reply(toICS(events,url.origin),200,{'Content-Type':'text/calendar; charset=utf-8','Content-Disposition':'attachment; filename="korvexa-tech-calendar.ics"','Cache-Control':'public, max-age=300'});
    }
+   if(BINARY_ASSETS[path])return reply(request.method==='HEAD'?null:Uint8Array.from(atob(BINARY_ASSETS[path]),c=>c.charCodeAt(0)),200,{'Content-Type':path.endsWith('.png')?'image/png':'image/jpeg','Cache-Control':'public, max-age=86400'});
    const types={'html':'text/html','css':'text/css','js':'text/javascript','mjs':'text/javascript','svg':'image/svg+xml'};
    if(ASSETS[path])return reply(request.method==='HEAD'?null:ASSETS[path],200,{'Content-Type':types[path.split('.').at(-1)]+'; charset=utf-8','Cache-Control':'public, max-age=300'});
    if(path==='/'||/^\/(events|opportunities)\/[^/]+$/.test(path))return reply(request.method==='HEAD'?null:ASSETS['/index.html'],200,{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-cache'});

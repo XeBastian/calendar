@@ -39,7 +39,7 @@ function request(path, query = {}, method = 'GET') {
 test('build produces Vercel static output without a Sites manifest', async () => {
   await assert.rejects(stat(join(fixture, '.openai')), {code: 'ENOENT'});
   await assert.rejects(stat(join(fixture, 'dist/.openai')), {code: 'ENOENT'});
-  for (const name of ['index.html', 'style.css', 'app.js', 'calendar.mjs', 'favicon.svg']) {
+  for (const name of ['index.html', 'style.css', 'app.js', 'calendar.mjs', 'favicon.svg', 'korvexa-logo.jpg', 'korvexa-mark.png']) {
     assert.ok((await readFile(join(fixture, config.outputDirectory, name))).length);
   }
   const html = await readFile(join(fixture, config.outputDirectory, 'index.html'), 'utf8');
@@ -101,3 +101,5 @@ test('detail page rewrites resolve to the app shell while API and feed use a fun
   assert.equal(feed.status, 200);
   assert.match(feed.headers.get('content-type'), /^text\/calendar/);
 });
+
+test('official brand assets are served without binary corruption by the portable Worker',async()=>{for(const [name,type] of [['korvexa-logo.jpg','image/jpeg'],['korvexa-mark.png','image/png']]){const response=await request('/'+name);assert.equal(response.status,200);assert.equal(response.headers.get('content-type'),type);assert.deepEqual(Buffer.from(await response.arrayBuffer()),await readFile(join(fixture,'public',name)));}});

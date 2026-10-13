@@ -64,3 +64,13 @@ Every event has a `calendar` key. Calendar definitions live in `src/calendar.mjs
 ## Data provenance
 
 Organizer-confirmed seed records were checked October 13, 2026. Every event has a source link and verification date. General programme pathways have no fixed event dates and therefore are not exported as calendar events. Application links open official programme pages; the app does not submit applications for users.
+
+### Expanded event catalogue
+
+The bundled catalogue contains 501 distinct events as checked on 13 October 2026. The expansion uses individual Google Developer Groups and CNCF organizer records, plus directly checked FlutterBytes, Go, GIS, AWS, UbuntuNet and ICTAM pages. See [the verification notes](data/VERIFICATION.md) for coverage and limitations.
+
+Search accepts organizer names, regions (including SADC and West Africa), Flutter, Go/Golang, GIS and AWS. Opening an event replaces the calendar sidebar with a dated, independently scrolling agenda; its search narrows upcoming events. The original calendar search does not restrict that agenda, while country, topic and other filters still apply. Closing the details restores the calendar query.
+
+To import downloaded individual GDG/CNCF JSON records again, run `node scripts/import-organizer-records.mjs <directory>`, then build. The regular scraper also reads the public GDG, CNCF and ICTAM listings. Listing refreshes retain previously verified admission and venue details; details still need periodic verification against organizer pages. Vercel deployments refresh their bundled data through a scraper run and redeployment.
+
+The logo and wordmark are the official assets from [Korvexa Dev](https://korvexa.dev/), bundled locally so the app does not depend on third-party image requests.
