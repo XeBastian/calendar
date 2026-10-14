@@ -29,7 +29,8 @@ function positionDropdown(control) {
   const above = rect.top - topEdge - margin - gap;
   const aboveTrigger = below < 180 && above > below;
   const available = Math.max(100, aboveTrigger ? above : below);
-  const panelWidth = Math.min(Math.max(rect.width, 220), width - margin * 2);
+  const minimum = control.wrapper.classList.contains('dropdown-compact') ? 160 : 220;
+  const panelWidth = Math.min(Math.max(rect.width, minimum), width - margin * 2);
   const left = Math.max(leftEdge + margin, Math.min(rect.left, leftEdge + width - panelWidth - margin));
   Object.assign(control.panel.style, {
     width: `${panelWidth}px`, maxHeight: `${Math.min(available, 340)}px`, left: `${left}px`,
@@ -99,7 +100,10 @@ function openDropdown(control) {
   if (control.select.disabled) return;
   closeDropdown();
   opened = control;
+  control.prefix = '';
+  control.typedAt = 0;
   control.button.setAttribute('aria-expanded', 'true');
+  control.button.focus({preventScroll: true});
   const panel = document.createElement('div');
   panel.className = 'dropdown-panel';
   panel.setAttribute('data-dropdown-panel', '');
@@ -198,8 +202,14 @@ document.addEventListener('keydown', event => {
   if (event.key === 'Tab' && opened) { closeDropdown(true); return; }
   if (['ArrowDown', 'ArrowUp', 'Home', 'End', 'Enter', ' '].includes(event.key) && !(inSearch && ['Home', 'End', ' '].includes(event.key))) {
     event.preventDefault();
-    if (!opened) { openDropdown(control); return; }
+    if (!opened) {
+      openDropdown(control);
+      if (event.key === 'Home') activate(control, 0);
+      if (event.key === 'End') activate(control, control.list.children.length - 1);
+      return;
+    }
     const count = control.list.querySelectorAll('[role="option"]').length;
+    if (!count) return;
     if (event.key === 'ArrowDown') activate(control, (control.active + 1) % count);
     if (event.key === 'ArrowUp') activate(control, (control.active - 1 + count) % count);
     if (event.key === 'Home') activate(control, 0);
