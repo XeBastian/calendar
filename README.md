@@ -20,7 +20,7 @@ npm run validate
 ## Features
 
 - Search by event, location and topic; filter continent, country (including UAE), year, event type, admission, support, applicant group and format.
-- Week, month and list views; bookmark events on the current device. Week is the opening view, and searching opens the list. Calendar arrows and the date picker share the current date without changing subscription filters.
+- Calendar-first website with the original week, month and list views, date picker, topic colors and saved events. Week is the opening view. Desktop shows a readable weekly calendar with complete daily agendas available from each date or “more” link. Mobile uses compact date pickers and the selected day’s events. A simple website header, inline filters and normal page scrolling replace the fixed app frame. Search opens the list. Imported emoji decorations are removed from displayed copy while source records and export URLs stay intact.
 - Event details link directly to organizer and financial-support sources.
 - Google Calendar event links and Apple/Outlook-compatible `.ics` downloads.
 - Filtered subscription feed at `/calendar/tech.ics`; query parameters match directory filters. `ids` exports a saved selection.
@@ -69,7 +69,7 @@ Organizer-confirmed seed records were checked October 13, 2026. Every event has 
 
 The bundled catalogue contains 501 distinct events as checked on 13 October 2026. The expansion uses individual Google Developer Groups and CNCF organizer records, plus directly checked FlutterBytes, Go, GIS, AWS, UbuntuNet and ICTAM pages. See [the verification notes](data/VERIFICATION.md) for coverage and limitations.
 
-Search accepts organizer names, regions (including SADC and West Africa), Flutter, Go/Golang, GIS and AWS. Opening an event replaces the calendar sidebar with a dated, independently scrolling agenda; its search narrows upcoming events. The original calendar search does not restrict that agenda, while country, topic and other filters still apply. Closing the details restores the calendar query.
+Search accepts organizer names, regions (including SADC and West Africa), Flutter, Go/Golang, GIS and AWS. Opening an event shows a full detail page with organizer information, calendar actions and related events. Returning to events restores the directory selection.
 
 To import downloaded individual GDG/CNCF JSON records again, run `node scripts/import-organizer-records.mjs <directory>`, then build. The regular scraper also reads the public GDG, CNCF and ICTAM listings. Listing refreshes retain previously verified admission and venue details; details still need periodic verification against organizer pages. Vercel deployments refresh their bundled data through a scraper run and redeployment.
 

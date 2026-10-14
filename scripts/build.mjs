@@ -1,7 +1,7 @@
 import {readFile, writeFile, mkdir, rm, cp, copyFile} from 'node:fs/promises';
 
 const assets = {};
-for (const name of ['index.html', 'style.css', 'app.js', 'ads.mjs', 'ads-config.json', 'ads.txt', 'privacy.html', 'privacy.js', 'favicon.svg', '404.html']) {
+for (const name of ['index.html', 'style.css', 'app.js', 'display.mjs', 'dropdowns.mjs', 'theme.mjs', 'ads.mjs', 'ads-config.json', 'ads.txt', 'privacy.html', 'privacy.js', 'favicon.svg', '404.html']) {
   assets['/' + name] = await readFile('public/' + name, 'utf8');
 }
 assets['/calendar.mjs'] = await readFile('src/calendar.mjs', 'utf8');

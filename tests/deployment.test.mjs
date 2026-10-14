@@ -39,7 +39,7 @@ function request(path, query = {}, method = 'GET') {
 test('build produces Vercel static output without a Sites manifest', async () => {
   await assert.rejects(stat(join(fixture, '.openai')), {code: 'ENOENT'});
   await assert.rejects(stat(join(fixture, 'dist/.openai')), {code: 'ENOENT'});
-  for (const name of ['index.html', 'style.css', 'app.js', 'calendar.mjs', 'ads.mjs', 'ads-config.json', 'ads.txt', 'privacy.html', 'privacy.js', 'favicon.svg', 'korvexa-logo.jpg', 'korvexa-mark.png']) {
+  for (const name of ['index.html', 'style.css', 'app.js', 'display.mjs', 'dropdowns.mjs', 'theme.mjs', 'calendar.mjs', 'ads.mjs', 'ads-config.json', 'ads.txt', 'privacy.html', 'privacy.js', 'favicon.svg', 'korvexa-logo.jpg', 'korvexa-mark.png']) {
     assert.ok((await readFile(join(fixture, config.outputDirectory, name))).length);
   }
   const html = await readFile(join(fixture, config.outputDirectory, 'index.html'), 'utf8');
