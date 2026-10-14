@@ -11,10 +11,11 @@ for (const name of ['korvexa-logo.jpg', 'korvexa-mark.png']) {
 }
 const seed = JSON.parse(await readFile('data/events.json', 'utf8'));
 const core = (await readFile('src/calendar.mjs', 'utf8')).replace(/^export /gm, '');
-const scraper = (await readFile('src/scraper.mjs', 'utf8')).replace(/^export /gm, '');
+const sectorSources = (await readFile('src/sector-sources.mjs', 'utf8')).replace(/^export /gm, '');
+const scraper = (await readFile('src/scraper.mjs', 'utf8')).replace(/^import .*sector-sources\.mjs';\n/m, '').replace(/^export /gm, '');
 const runtime = await readFile('src/worker.mjs', 'utf8');
 const worker = 'const BINARY_ASSETS=' + JSON.stringify(binaryAssets) + ';\nconst ASSETS=' + JSON.stringify(assets) + ';\nconst SEED=' +
-  JSON.stringify(seed) + ';\n' + core + '\n' + scraper + '\n' + runtime;
+  JSON.stringify(seed) + ';\n' + core + '\n' + sectorSources + '\n' + scraper + '\n' + runtime;
 
 await mkdir('worker', {recursive: true});
 await writeFile('worker/index.js', worker);

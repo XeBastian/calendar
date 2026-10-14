@@ -2,8 +2,46 @@ export const calendars = [{id:'tech',name:'Tech Calendar',description:'Conferenc
 export function fundingStatus(funding, today=new Date().toISOString().slice(0,10)) {
   if (!funding) return 'Not listed';
   if (funding.deadline && funding.deadline < today) return 'Closed';
+  if (funding.opensAt && funding.opensAt > today) return 'Not yet open';
+  if (funding.opensAt && funding.status === 'Not yet open') return 'Open';
   return funding.status;
 }
+export function filterOpportunities(opportunities, params, today=new Date().toISOString().slice(0,10)) {
+ const get=k=>params instanceof URLSearchParams?params.get(k):params[k];
+ const cutoff=new Date(Date.parse(today+'T00:00:00Z')+30*86400000).toISOString().slice(0,10);
+ return opportunities.filter(o=>{
+  if(get('topic')&&!o.topics.includes(get('topic')))return false;
+  if(get('audience')&&!o.audience.includes(get('audience')))return false;
+  const q=(get('q')||'').toLowerCase().trim();
+  if(q&&!q.split(/\s+/).every(t=>[o.name,o.region,o.eligibility,o.coverage,...o.topics].join(' ').toLowerCase().includes(t)))return false;
+  const eligible=o.eligibleContinents|| (o.region==='Global'?null:[o.region]);
+  if(get('continent')&&eligible&&!eligible.includes(get('continent')))return false;
+  if(get('region')&&eligible&&!eligible.includes('Africa'))return false;
+  if(get('country')){
+   if(o.countries&&!o.countries.includes(get('country')))return false;
+   if(!o.countries&&eligible&&!eligible.includes(continentForCountry(get('country'))))return false;
+  }
+  if(get('funding')==='open'&&!['Open','Contact organiser','Check deadline'].includes(fundingStatus(o,today)))return false;
+  if(get('funding')==='full'&&o.level!=='Fully funded')return false;
+  if(get('funding')==='travel'&&!/Travel|Sponsored|Fully funded/i.test(o.level))return false;
+  if(get('deadline')==='any-deadline'&&!o.deadline)return false;
+  if(get('deadline')==='no-deadline'&&o.deadline)return false;
+  if(get('deadline')==='open-deadline'&&(!o.deadline||o.deadline<today||o.deadline>cutoff||fundingStatus(o,today)==='Not yet open'))return false;
+  return true;
+ });
+}
+const opportunityCountryContinents = {};
+const opportunityRegionNames = new Intl.DisplayNames(['en'],{type:'region'});
+for(const [continent,codes] of Object.entries({
+ Africa:'DZ AO BJ BW BF BI CV CM CF TD KM CG CD DJ EG GQ ER SZ ET GA GM GH GN GW CI KE LS LR LY MG MW ML MR MU MA MZ NA NE NG RW ST SN SC SL SO ZA SS SD TZ TG TN UG ZM ZW',
+ Europe:'AL AD AT BY BE BA BG HR CY CZ DK EE FI FR DE GR HU IS IE IT XK LV LI LT LU MT MD MC ME NL MK NO PL PT RO RU SM RS SK SI ES SE CH UA GB VA',
+ Asia:'AF AM AZ BH BD BT BN KH CN GE HK IN ID IR IQ IL JP JO KZ KW KG LA LB MO MY MV MN MM NP KP OM PK PS PH QA SA SG KR LK SY TW TJ TH TL TR TM AE UZ VN YE',
+ 'North America':'AG BS BB BZ CA CR CU DM DO SV GD GT HT HN JM MX NI PA KN LC VC TT US',
+ 'South America':'AR BO BR CL CO EC GY PY PE SR UY VE',
+ Oceania:'AU FJ KI MH FM NR NZ PW PG WS SB TO TV VU'
+}))for(const code of codes.split(' '))opportunityCountryContinents[opportunityRegionNames.of(code)]=continent;
+Object.assign(opportunityCountryContinents,{'Democratic Republic of the Congo':'Africa','Ivory Coast':'Africa','Cabo Verde':'Africa'});
+export function continentForCountry(country){return opportunityCountryContinents[country];}
 export function filterEvents(events, params, today=new Date().toISOString().slice(0,10)) {
   const get=k=>params instanceof URLSearchParams?params.get(k):params[k];
   return events.filter(e=>{

@@ -1,8 +1,11 @@
+import {SECTOR_SOURCES} from './sector-sources.mjs';
 // Only fetch explicitly configured organizer pages. No visitor-controlled URLs.
 export const SOURCES = [
+  ...SECTOR_SOURCES,
+  {id:'africa-fintech-api',name:'Africa Fintech Summit · public events',url:'https://www.africafintechsummit.com/api/events',parser:'organizer-api',prefix:'afts',series:'Africa Fintech Summit',topics:['Fintech','Startups']},
   {id:'ictam',name:'ICT Association of Malawi',url:'https://admin.ictam.org.mw/api/public/events',parser:'ictam',series:'ICTAM',topics:['Development']},
   ...Array.from({length:6},(_,i)=>({id:'gdg-'+(i+1),name:'Google Developer Groups · page '+(i+1),url:'https://gdg.community.dev/api/event/?page='+(i+1)+'&page_size=200&status=Published',parser:'bevy',series:'Google Developer Groups',prefix:'gdg',topics:['Development']})),
-  {id:'cncf',name:'CNCF community events',url:'https://community.cncf.io/api/event/?page_size=200&status=Published',parser:'bevy',series:'CNCF',prefix:'cncf',topics:['Cloud & DevOps','Open source']},
+  {id:'cncf',name:'CNCF community events',url:'https://community2.cncf.io/api/event/?page_size=200&status=Published',parser:'bevy',series:'CNCF',prefix:'cncf',topics:['Cloud & DevOps','Open source']},
   {id:'python-conferences',name:'Python.org conferences',url:'https://www.python.org/events/python-events/',parser:'python',topics:['Development','Open source']},
   {id:'python-conferences-2',name:'Python.org conferences · page 2',url:'https://www.python.org/events/python-events/?page=2',parser:'python',topics:['Development','Open source']},
   {id:'python-meetups-2',name:'Python.org meetups · page 2',url:'https://www.python.org/events/python-user-group/?page=2',parser:'python',topics:['Development','Open source'],type:'Meetup'},
@@ -63,6 +66,7 @@ export function eventTopics(event,source){
  const text=plain([event.title,event.description_short,...(event.tags||[])].join(' '));
  const topics=new Set(source.topics||['Development']);
  const rules=[['AI',/\bAI\b|artificial intelligence|machine learning|Gemini|Gemma|\bLLM\b|agentic/i],['Flutter',/flutter|\bdart\b/i],['Go',/golang|gopher|\bGo (?:meetup|programming|language|developers?)\b/i],['GIS',/\bGIS\b|geospatial|earth engine|google maps|openstreetmap|remote sensing/i],['Security',/cybersecurity|\bsecurity\b|privacy|phishing/i],['Cloud & DevOps',/cloud|devops|kubernetes|platform engineering|\bAWS\b/i],['Startups',/startups?|entrepreneur/i],['Open source',/open source|linux|kubernetes/i],['Digital inclusion',/accessibility|digital inclusion/i]];
+ rules.push(['Digital health',/digital health|healthtech|health tech|healthcare IT|health informatics|medical informatics|telemedicine|\behealth\b|\be-health\b|AI (?:in|for) (?:health|healthcare|medicine)/i],['Fintech',/fintech|fin tech|digital banking|open banking|open finance|financial technology|mobile money|payment (?:systems|technology|platforms)/i]);
  for(const [topic,pattern] of rules)if(pattern.test(text))topics.add(topic);
  return [...topics];
 }
@@ -101,18 +105,40 @@ export function parseICTAM(payload,source,now=new Date().toISOString()) {
  });
 }
 function eventName(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/20\d{2}/g,'').replace(/[^a-z0-9]/g,'');}
+export function parseOrganizerPage(html,source,now=new Date().toISOString()){
+ // Never infer conference dates from submission deadlines or last year's edition.
+ // These reviewed records are refreshed only when the visible page still confirms
+ // every evidence pattern. A date change is reported for review, retaining the seed.
+ const visible=plain(html.replace(/<!--[\s\S]*?-->/g,'').replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi,''));
+ return (source.records||[]).flatMap(({event,evidence})=>{
+  if(!evidence?.length||!evidence.every(pattern=>new RegExp(pattern,'i').test(visible)))return [];
+  if(!validDate(event.start)||!validDate(event.end)||event.end<event.start||!safeURL(event.url,source.url))return [];
+  return [{...event,verifiedAt:now.slice(0,10)}];
+ });
+}
+export function parseOrganizerAPI(payload,source,now=new Date().toISOString()){
+ if(typeof payload==='string'){try{payload=JSON.parse(payload);}catch{return [];}}
+ const rows=Array.isArray(payload)?payload:[payload];
+ return rows.flatMap(v=>{
+  if(v?.isPublished!==true||v.isHidden||/cancel/i.test(v.status||'')||!v.id||!v.slug)return [];
+  const event=makeEvent({name:v.name,start:String(v.startDate||'').slice(0,10),end:String(v.endDate||v.startDate||'').slice(0,10),location:[v.city,v.country].filter(Boolean).join(', '),url:new URL('/events/'+encodeURIComponent(v.slug),source.url).href,description:v.description},source,now);
+  if(!event)return [];
+  return [{...event,id:source.prefix+'-'+v.id,organizer:source.series,series:source.series,topics:eventTopics({title:v.name,description_short:v.description},source),type:'Summit',venue:plain(v.venue),sourceAPI:source.url+'/'+encodeURIComponent(v.slug),detailsVerifiedAt:now.slice(0,10),verification:'Organizer record'}];
+ });
+}
 export function mergeEvents(existing,incoming){
  const merged=[...existing];
  const canonical=u=>u.replace(/\/$/,'');
  for(const event of incoming){
   const index=merged.findIndex(e=>e.id===event.id||(e.sourceRecordIds||[]).includes(event.id)||(
-   e.start.slice(0,4)===event.start.slice(0,4)&&canonical(e.url)===canonical(event.url)&&new URL(e.url).pathname!=='/conferences/srecon'
+   e.start.slice(0,4)===event.start.slice(0,4)&&canonical(e.url)===canonical(event.url)&&eventName(e.name)===eventName(event.name)&&new URL(e.url).pathname!=='/conferences/srecon'
   )||(
    e.start===event.start&&e.country===event.country&&e.city===event.city&&
    ((!e.sourceAPI&&!event.sourceAPI&&eventName(e.name)===eventName(event.name))||(e.aliases||[]).some(n=>eventName(n)===eventName(event.name)))
   ));
   if(index<0){merged.push(event);continue;}
   const old=merged[index];
+  if(old.verifiedAt&&event.verifiedAt&&old.verifiedAt>event.verifiedAt)continue;
   if((old.sourceRecordIds||[]).includes(event.id)){merged[index]={...old,verifiedAt:event.verifiedAt};continue;}
   if(old.verification==='Source imported'||old.verification==='Organizer record'){
    // A listing refresh must not replace detail-verified prices and venues with unknowns.
@@ -123,16 +149,28 @@ export function mergeEvents(existing,incoming){
  }
  return merged;
 }
-export async function scrape(snapshot,{fetcher=fetch,now=new Date().toISOString()}={}){
+export async function scrape(snapshot,{fetcher=fetch,now=new Date().toISOString(),sources=SOURCES}={}){
   const reports=[],incoming=[];
   // Three concurrent, bounded requests; all source failures retain existing data.
-  for(let i=0;i<SOURCES.length;i+=3){await Promise.all(SOURCES.slice(i,i+3).map(async source=>{try{
-    const response=await fetcher(source.url,{headers:{'User-Agent':'KorvexaCalendar/1.0 (+https://calendar.korvexa.com)'},signal:AbortSignal.timeout(15000),redirect:'manual'});
+  for(let i=0;i<sources.length;i+=3){await Promise.all(sources.slice(i,i+3).map(async source=>{try{
+    let url=source.url,response;
+    const signal=AbortSignal.timeout(15000);
+    for(let redirects=0;redirects<=3;redirects++){
+     response=await fetcher(url,{headers:{'User-Agent':'KorvexaCalendar/1.0 (+https://calendar.korvexa.com)'},signal,redirect:'manual'});
+     if(![301,302,303,307,308].includes(response.status))break;
+     const location=response.headers.get('location'),next=location&&safeURL(location,url);
+     if(!next||new URL(next).hostname.replace(/^www\./,'')!==new URL(source.url).hostname.replace(/^www\./,''))throw new Error('Unexpected redirect; source URL needs review');
+     await response.body?.cancel();url=next;
+    }
     if(!response.ok)throw new Error('HTTP '+response.status);
     if(Number(response.headers.get('content-length')||0)>8000000)throw new Error('Page too large');
     const reader=response.body.getReader();let chunks=[],length=0;for(;;){const {done,value}=await reader.read();if(done)break;length+=value.byteLength;if(length>8000000){await reader.cancel();throw new Error('Page too large');}chunks.push(value);}const bytes=new Uint8Array(length);let offset=0;for(const c of chunks){bytes.set(c,offset);offset+=c.length;}const html=new TextDecoder().decode(bytes);
-    const parsed=source.parser==='ictam'?parseICTAM(html,source,now):source.parser==='bevy'?parseBevy(html,source,now):source.parser==='python'?parsePython(html,source,now):source.parser==='usenix'?parseUsenix(html,source,now):parseJSONLD(html,source,now);
-    incoming.push(...parsed.filter(e=>e.end>=now.slice(0,10)));reports.push({id:source.id,name:source.name,url:source.url,status:parsed.length?'ok':'no structured events',count:parsed.length,checkedAt:now});
+    const parsed=source.parser==='organizer-api'?parseOrganizerAPI(html,source,now):source.parser==='organizer'?parseOrganizerPage(html,source,now):source.parser==='ictam'?parseICTAM(html,source,now):source.parser==='bevy'?parseBevy(html,source,now):source.parser==='python'?parsePython(html,source,now):source.parser==='usenix'?parseUsenix(html,source,now):parseJSONLD(html,source,now);
+    const active=parsed.filter(e=>e.end>=now.slice(0,10));
+    const expected=source.records?.filter(r=>r.event.end>=now.slice(0,10)).length;
+    const review=source.parser==='organizer'&&active.length!==expected;
+    incoming.push(...active);reports.push({id:source.id,name:source.name,url:source.url,status:review?'needs review':parsed.length?'ok':'no structured events',count:active.length,checkedAt:now,...(review?{error:'Published dates could not be confirmed for '+(expected-active.length)+' records; previous records retained.'}:{})});
   }catch(error){reports.push({id:source.id,name:source.name,url:source.url,status:'error',error:error.message,checkedAt:now,count:0});}}));}
-  return {...snapshot,events:mergeEvents(snapshot.events,incoming),sources:reports,lastScrape:now,updatedAt:incoming.length?now:snapshot.updatedAt};
+  const checked=new Set(reports.map(s=>s.id));
+  return {...snapshot,events:mergeEvents(snapshot.events,incoming),sources:[...(snapshot.sources||[]).filter(s=>!checked.has(s.id)),...reports],lastScrape:now,updatedAt:incoming.length?now:snapshot.updatedAt};
 }

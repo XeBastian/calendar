@@ -12,6 +12,7 @@ Open http://localhost:4173. The local server persists imported data in `.runtime
 
 ```sh
 npm run scrape   # Fetch organizer data into the tracked seed dataset
+npm run enrich   # Check new GDG/CNCF records for venues, format and admission
 npm test         # Calendar, filters, parser and failure-handling checks
 npm run build    # Build static assets in dist/client and the shared server in worker/index.js
 npm run validate
@@ -59,15 +60,15 @@ Calendar services choose their own refresh cadence, which can take many hours.
 
 ## Other domains later
 
-Every event has a `calendar` key. Calendar definitions live in `src/calendar.mjs`; events, importer sources, UI topics and feed routing can be extended to additional domain calendars without changing the event model. This release intentionally exposes only the technology calendar.
+Every event has a `calendar` key. Calendar definitions live in `src/calendar.mjs`; events, importer sources, UI topics and feed routing can be extended to additional domain calendars without changing the event model. Digital health and Fintech are topics within the technology calendar, alongside developer, research and community events.
 
 ## Data provenance
 
-Organizer-confirmed seed records were checked October 13, 2026. Every event has a source link and verification date. General programme pathways have no fixed event dates and therefore are not exported as calendar events. Application links open official programme pages; the app does not submit applications for users.
+The latest catalogue expansion was checked October 14, 2026. Every event has a source link and verification date. General programme pathways have no fixed event dates and therefore are not exported as calendar events. Application links open official programme pages; the app does not submit applications for users.
 
 ### Expanded event catalogue
 
-The bundled catalogue contains 501 distinct events as checked on 13 October 2026. The expansion uses individual Google Developer Groups and CNCF organizer records, plus directly checked FlutterBytes, Go, GIS, AWS, UbuntuNet and ICTAM pages. See [the verification notes](data/VERIFICATION.md) for coverage and limitations.
+The bundled catalogue contains 1,251 records, including 1,220 active/upcoming events in 118 countries as checked on 14 October 2026. The expansion uses individual Google Developer Groups and CNCF organizer records, plus directly checked FlutterBytes, Go, GIS, AWS, UbuntuNet and ICTAM pages. See [the verification notes](data/VERIFICATION.md) for coverage and limitations.
 
 Search accepts organizer names, regions (including SADC and West Africa), Flutter, Go/Golang, GIS and AWS. Opening an event shows a full detail page with organizer information, calendar actions and related events. Returning to events restores the directory selection.
 
@@ -78,3 +79,15 @@ The logo and wordmark are the official assets from [Korvexa Dev](https://korvexa
 ### Advertising placements
 
 To review the planned inventory, open an event with `?ads=preview`, or use `/?view=list&ads=preview`. Three labelled ad previews sit within the scrolling content and stay hidden during normal use. See [the advertising setup guide](docs/ADS.md) for the AdSense and Ad Manager account/configuration details needed next. No live ads, tracking or download gate is active.
+
+### Health, finance and attendance support
+
+The October 14 expansion includes 25 active/upcoming digital-health records and 15 fintech records. Malawi's National Health Promotion Conference, Tanzania's digital-health programme, AFIS in Angola, FINASA and FinTech Summit Africa in South Africa are included alongside global events. SADC, Africa and country filters remain available. Empty weeks/months show the total upcoming count and a button to browse all matching dates.
+
+`src/sector-sources.mjs` defines reviewed organizer-page records and date-evidence patterns. The regular importer checks these pages alongside community listings and the Africa Fintech Summit's public events API. It flags changed/missing date evidence for review and preserves the previous records. These page definitions do not discover unannounced editions automatically: add new reviewed records when organizers publish dates. A failed check never confirms freshness. Imports retain separately curated source reports and funding terms.
+
+After a listing import, run `npm run enrich` before publishing the snapshot. It retrieves new public GDG/CNCF detail records with three concurrent requests, preserving organizer admission and venue information, and reports failed checks. The current expansion's 657 new GDG records were individually checked; four transient failures succeeded on retry. The CNCF importer uses its current `community2.cncf.io` feed.
+
+The Funding tab now includes 10 programme pathways plus event-specific support. Opening dates, closed rounds, regional restrictions, partial awards, registration-only waivers and reimbursements are explicit. The PyCon Namibia grant application closes October 21, 2026. GDHF and HCIC's 2026 scholarship rounds are closed; GDHF offers free virtual participation for eligible low- and middle-income country participants. RIPE fellowships require residence in the RIPE NCC service region; the next ICANN Policy Forum fellowship is for alumni. Review programme terms directly before applying.
+
+Run `npm run build` and `npm run validate` after updating the data. Deploy the resulting snapshot through your existing self-hosting setup. Local and Cloudflare scheduled imports remain available; Vercel still requires a new deployment to publish snapshot changes.

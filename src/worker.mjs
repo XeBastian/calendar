@@ -4,7 +4,9 @@ async function readSnapshot(env){
   const persisted=await object.json();
   const sources=new Map(SEED.sources.map(s=>[s.id,s]));
   for(const source of persisted.sources||[]){const previous=sources.get(source.id);if(!previous||source.checkedAt>previous.checkedAt)sources.set(source.id,source);}
-  return {...persisted,events:mergeEvents(SEED.events,persisted.events),opportunities:persisted.opportunities||SEED.opportunities,sources:[...sources.values()],updatedAt:[SEED.updatedAt,persisted.updatedAt].filter(Boolean).sort().at(-1)};
+  const opportunities=new Map(SEED.opportunities.map(o=>[o.id,o]));
+  for(const opportunity of persisted.opportunities||[]){const previous=opportunities.get(opportunity.id);if(!previous||opportunity.verifiedAt>previous.verifiedAt)opportunities.set(opportunity.id,opportunity);}
+  return {...persisted,events:mergeEvents(SEED.events,persisted.events),opportunities:[...opportunities.values()],sources:[...sources.values()],lastScrape:[SEED.lastScrape,persisted.lastScrape].filter(Boolean).sort().at(-1),updatedAt:[SEED.updatedAt,persisted.updatedAt].filter(Boolean).sort().at(-1)};
  }}
  return memorySnapshot||SEED;
 }

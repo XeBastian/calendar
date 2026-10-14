@@ -1,4 +1,29 @@
-# Event verification — 13 October 2026
+# Latest verification — 14 October 2026
+
+1,251 records, of which 1,220 are active/upcoming, across 118 host countries. This adds 706 records to the previous 545-record snapshot. There are 282 active/upcoming African records, including 43 in SADC and five in Malawi; topic totals overlap.
+
+| Current coverage | Active/upcoming records |
+| --- | ---: |
+| Digital health | 25 |
+| Fintech | 15 |
+| Africa | 282 |
+| SADC | 43 |
+| Malawi | 5 |
+| Funding pathways (separate from dated events) | 10 |
+
+The three user-supplied health conferences were checked against [UBIQ Events](https://www.digitalhealthconference.net/), [Innovatex](https://innovatexconference.com/publichealth/) and [GDHF](https://www.gdhf.digital/programme). Local and regional additions include the [Malawi Ministry of Health's October 28–29 conference](https://www.health.gov.mw/single-news/8), [three separately dated MUHAS programmes](https://www.muhas-dhi.ac.tz/events/event-details/tanzania-digital-health-and-innovation-week-2026/), [WorldCIST in Cape Town](https://www.worldcist.org/index.php), [AFIS in Luanda](https://www.afis.africa/en/2026-annual-summit/), [FINASA in Johannesburg](https://www.finasa.org.za/event-details/africa-fintech-and-banking-summit) and [FinTech Summit Africa](https://fintechsummit.co.za/). Broader health conferences are tagged only when their published programme includes health IT, digital health or emerging technology tracks. Courses and workshops retain their own event types.
+
+657 new Google Developer Groups listings were individually checked using their public detail APIs. All checks succeeded, including four that initially returned HTTP 500 and succeeded on retry. The existing import filters exclude hidden, private, draft and test events. New records store their detail source, verification date, format and admission when published. Unknown prices and venues remain unknown. The Python.org and USENIX listings were refreshed too. CNCF's old feed redirects through its migration service to `community2.cncf.io`; the importer now uses that current official feed directly.
+
+The existing Africa Fintech Summit record incorrectly showed Washington in November. Its [organizer event API](https://www.africafintechsummit.com/api/events/africa-fintech-summit-kigali-2026) confirms Kigali Convention Center, November 18–20, 2026; the record retains its previous calendar identity and now carries those dates and location.
+
+Attendance support was checked against [PyCon Namibia](https://na.pycon.org/2027/grants/), [GDHF](https://www.gdhf.digital/scholarships), [HCIC](https://www.hcic.net/hcic-scholarship-information), [ICANN](https://www.icann.org/fellowshipprogram), [AFRINIC](https://www.afrinic.net/fellowship-programme.html), [RIPE](https://www.ripe.net/community/community-initiatives/ripe-fellowship/), [IETF](https://www.ietf.org/meeting/registration-fee-waivers/), [USENIX](https://www.usenix.org/conferences/grants), [ACM-W](https://women.acm.org/scholarships/), [SIGCHI](https://sigchi.org/resources/gary-marsden-travel-awards/) and [HPSF](https://events.linuxfoundation.org/hpsf-conference/attend/scholarships-travel-funding/). Open, future and closed rounds are distinguished. GDHF and HCIC applications are closed; AFRINIC and USENIX future calls are watchlists. RIPE is region-restricted and ICANN's next round is alumni-only. Registration-only support and reimbursements are explicit. These checks do not change earlier curated funding claims for other events.
+
+Organizer-page refresh definitions live in `src/sector-sources.mjs`. They validate reviewed date evidence rather than inventing dates or inferring deadlines as conference dates. Missing or changed evidence produces **needs review** and retains previous records. New editions need reviewed source definitions. AMIA's page is readable through web search but blocked the direct importer with HTTP 403; its source report retains that failure. Money20/20's current page confirms the four dates through web retrieval but its client-rendered content does not match the HTML importer; the source reports **needs review**. Fourteen training sessions from a BMC catalogue were excluded after its live hostname could not be resolved. Conflicting MEDINFO date announcements and conferences without complete upcoming dates were omitted.
+
+The expanded snapshot passes the full test suite, portable build and artifact validation. UI checks cover the aligned footer, About prose, digital-health list, empty-week discovery and funding filters. This update is local; the independently hosted deployment still needs its usual snapshot deployment.
+
+## Earlier verification — 13 October 2026
 
 501 distinct active or upcoming events; 78 countries; 266 events hosted by African communities (including online events). Countries refer to the host chapter for online events, and the organizer's published location for physical events. Dates are local calendar dates, exported as all-day events.
 
